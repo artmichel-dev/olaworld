@@ -2,7 +2,16 @@ import VideoBackground from './components/VideoBackground';
 import Image from 'next/image';
 
 export default function Home() {
-  const videoUrl = 'https://cms-public-artifacts.artlist.io/content/artgrid/footage-hls/f338c3b8-1832-423e-b43a-108b27a4fef4_2160p_1737445310.m3u8';
+  // Video de prueba de Apple (CORS habilitado, siempre funciona)
+  // TODO: Reemplazar con tu propio video cuando esté listo
+  const videoUrl = 'https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_fmp4/master.m3u8';
+  
+  // Alternativas que también funcionan:
+  // Mux 4K: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8'
+  // Sintel HD: 'https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8'
+  
+  // URL original (problema CORS en Vercel):
+  // 'https://cms-public-artifacts.artlist.io/content/artgrid/footage-hls/f338c3b8-1832-423e-b43a-108b27a4fef4_2160p_1737445310.m3u8';
 
   return (
     <main className="relative w-full h-screen overflow-hidden">

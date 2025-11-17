@@ -5,6 +5,43 @@ Todos los cambios notables de este proyecto serán documentados en este archivo.
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/),
 y este proyecto adhiere a [Semantic Versioning](https://semver.org/lang/es/).
 
+## [1.1.2] - 2025-11-17
+
+### 🔧 Corregido (CRÍTICO)
+
+#### Video en Vercel
+- **Cambiado a video con CORS habilitado** (Apple Test Stream)
+- **Problema**: Video de Artlist bloqueaba CORS desde Vercel
+- **Solución**: Usar video de prueba mientras se configura video propio
+- **Resultado**: ✅ Video funciona en local y en Vercel
+
+#### Documentación
+- Añadido `docs/USAR_TU_PROPIO_VIDEO.md` - Guía completa para usar tu propio video
+  - Opciones de hosting (Cloudinary, AWS S3, Vercel Blob, GitHub)
+  - Configuración de CORS paso a paso
+  - Conversión a HLS/M3U8 con FFmpeg
+  - Optimización de video para web
+  - Comparación de costos
+  - Workflow completo
+
+### 🎬 Videos Alternativos Incluidos
+
+En `app/page.tsx` ahora hay:
+- Apple Test Stream (activo, CORS ✅)
+- Mux Test Stream (comentado, 4K, CORS ✅)
+- Sintel HD (comentado, CORS ✅)
+- URL original de Artlist (comentada, documentada el problema CORS)
+
+### 📝 Explicación del Problema CORS
+
+El video de Artlist funcionaba en local pero no en Vercel porque:
+- Local: `localhost` no tiene restricciones CORS estrictas
+- Vercel: Dominio público → Artlist bloquea el acceso
+
+Solución permanente: Hospedar el video en un servicio propio con CORS configurado.
+
+---
+
 ## [1.1.1] - 2025-11-17
 
 ### 🔧 Corregido
