@@ -28,6 +28,7 @@ Landing page "Coming Soon" profesional construida con Next.js 14 (App Router) y 
 - **[Componente de Video](docs/VIDEO_COMPONENT.md)** - Documentación técnica del video
 - **[Solución de Problemas de Video](docs/VIDEO_TROUBLESHOOTING.md)** - Guía completa de troubleshooting
 - **[Usar Tu Propio Video](docs/USAR_TU_PROPIO_VIDEO.md)** - Cómo hospedar y usar tu propio video
+- **[AWS S3 CORS](docs/AWS_S3_CORS.md)** - Configuración CORS para AWS S3
 - **[Seguridad](docs/SEGURIDAD.md)** - Información sobre vulnerabilidades y seguridad
 - **[Estructura](docs/ESTRUCTURA.md)** - Estructura del proyecto
 - **[Changelog](CHANGELOG.md)** - Historial de cambios

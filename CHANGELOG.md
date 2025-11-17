@@ -5,6 +5,43 @@ Todos los cambios notables de este proyecto serán documentados en este archivo.
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/),
 y este proyecto adhiere a [Semantic Versioning](https://semver.org/lang/es/).
 
+## [1.2.0] - 2025-11-17
+
+### ✨ Añadido
+
+#### Video Propio en AWS S3
+- **Configurado video propio** desde bucket AWS S3
+- **URL**: `https://olaworld.s3.us-east-2.amazonaws.com/m3u8/...`
+- **Region**: us-east-2 (Ohio)
+- **Formato**: HLS/M3U8 con segmentos .ts
+
+#### Documentación
+- Añadido `docs/AWS_S3_CORS.md` - Guía completa de configuración CORS para S3
+  - Configuración CORS paso a paso
+  - Cómo hacer archivos públicos
+  - Bucket Policy recomendada
+  - Verificación con curl y navegador
+  - Troubleshooting común
+  - Optimización con CloudFront
+  - Cálculo de costos
+
+### 🎬 Video Actualizado
+
+- ✅ Video propio del proyecto (no test)
+- ✅ Hospedado en AWS S3 propio
+- ✅ CORS configurable
+- ✅ Control total del contenido
+- ✅ Mismo video que funcionaba en Artlist, ahora sin restricciones CORS
+
+### 📝 Notas
+
+- Video de prueba de Apple reemplazado por video definitivo
+- URLs alternativas disponibles comentadas en código
+- Guía completa de CORS en S3 incluida
+- Recomendación de CloudFront para mejor performance
+
+---
+
 ## [1.1.2] - 2025-11-17
 
 ### 🔧 Corregido (CRÍTICO)
