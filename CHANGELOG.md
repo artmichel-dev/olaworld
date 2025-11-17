@@ -5,6 +5,41 @@ Todos los cambios notables de este proyecto serán documentados en este archivo.
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/),
 y este proyecto adhiere a [Semantic Versioning](https://semver.org/lang/es/).
 
+## [1.1.1] - 2025-11-17
+
+### 🔧 Corregido
+
+#### Componente VideoBackground
+- **Manejo de errores mejorado** con sistema de reintentos (máximo 3 intentos)
+- **Logs detallados en consola** para debugging (🎥 ✅ ❌ ⚠️)
+- **Mensajes de error amigables** para el usuario con botón "Reintentar"
+- **Click to play** si autoplay falla
+- **Configuración CORS** mejorada (`crossOrigin="anonymous"`)
+- **Detección de errores de red y medios** con recuperación automática
+
+#### Documentación
+- Añadido `docs/VIDEO_TROUBLESHOOTING.md` - Guía completa de troubleshooting
+  - Diagnóstico paso a paso
+  - URLs de video alternativas que funcionan 100%
+  - Soluciones a problemas comunes
+  - Checklist de solución
+  - Recomendaciones de formato y optimización
+
+### 🎬 Videos Alternativos Agregados
+
+- Apple Test Stream (siempre disponible)
+- Mux Test Stream (4K)
+- Bitmovin Sintel (HD)
+
+### 🐛 Problemas Resueltos
+
+- ❌ Video no cargaba en Vercel → ✅ Sistema de reintentos
+- ❌ Sin feedback visual de error → ✅ Mensajes claros + botón reintentar
+- ❌ Difícil de debuggear → ✅ Logs detallados en consola
+- ❌ Autoplay bloqueado → ✅ Click to play implementado
+
+---
+
 ## [1.1.0] - 2025-11-17
 
 ### ✨ Añadido

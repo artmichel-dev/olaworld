@@ -26,6 +26,7 @@ Landing page "Coming Soon" profesional construida con Next.js 14 (App Router) y 
 - **[Guía de Personalización](docs/PERSONALIZACION.md)** - Personaliza tu landing page
 - **[Diseño Responsive](docs/RESPONSIVE.md)** - Testing y validación responsive
 - **[Componente de Video](docs/VIDEO_COMPONENT.md)** - Documentación técnica del video
+- **[Solución de Problemas de Video](docs/VIDEO_TROUBLESHOOTING.md)** - Guía completa de troubleshooting
 - **[Seguridad](docs/SEGURIDAD.md)** - Información sobre vulnerabilidades y seguridad
 - **[Estructura](docs/ESTRUCTURA.md)** - Estructura del proyecto
 - **[Changelog](CHANGELOG.md)** - Historial de cambios
