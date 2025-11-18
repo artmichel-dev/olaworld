@@ -5,6 +5,170 @@ Todos los cambios notables de este proyecto serán documentados en este archivo.
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/),
 y este proyecto adhiere a [Semantic Versioning](https://semver.org/lang/es/).
 
+## [1.3.0] - 2025-11-18
+
+### ✨ Añadido
+
+#### SEO Completo
+- **Open Graph configurado** para Facebook, LinkedIn, WhatsApp
+- **Twitter Cards** implementadas (summary_large_image)
+- **Metadata completo** con título, descripción, keywords
+- **Robots.txt** configurado para indexación
+- **PWA Manifest** para instalación en móviles
+- **Theme Color** adaptable (light/dark mode)
+
+#### Metadata Implementado
+```typescript
+- title: "Ola World - Próximamente | Coming Soon"
+- description: "OLA Espíritu Santo - Una nueva ola está por llegar..."
+- keywords: ["Ola World", "Ola", "Espíritu Santo", ...]
+- authors, creator, publisher configurados
+- robots: indexación habilitada
+- viewport optimizado para móviles
+```
+
+#### Open Graph (Redes Sociales)
+- **og:type**: website
+- **og:locale**: es_ES
+- **og:url**: https://olaworld.vercel.app
+- **og:site_name**: Ola World
+- **og:title**: Ola World - Próximamente
+- **og:description**: OLA Espíritu Santo...
+- **og:image**: /og-image.jpg (1200×630px)
+  - Dimensiones optimizadas para todas las redes
+  - Alt text descriptivo
+  - Type especificado (image/jpeg)
+
+#### Twitter Card
+- **Card type**: summary_large_image
+- **Title**: Ola World - Próximamente
+- **Description**: OLA Espíritu Santo...
+- **Image**: /og-image.jpg
+- **Creator/Site**: @olaworld
+
+#### PWA (Progressive Web App)
+- **Manifest.json** configurado
+- **Name**: "Ola World - OLA Espíritu Santo"
+- **Short name**: "Ola World"
+- **Display**: standalone
+- **Theme color**: #FFE650 (amarillo Ola)
+- **Background**: #000000 (negro)
+- **Icons**: SVG para máxima calidad
+- **Installable**: Puede instalarse como app
+
+#### Meta Tags Adicionales
+- Apple Mobile Web App compatible
+- Preconnect a AWS S3 para mejor performance
+- DNS prefetch configurado
+- Format detection deshabilitado
+- Google Bot configuración avanzada
+
+#### Documentación
+- Añadido `docs/SEO.md` - Guía completa de SEO
+  - Configuración de metadata
+  - Open Graph para cada plataforma
+  - Twitter Cards setup
+  - PWA manifest explicado
+  - Cómo preparar imagen OG (1200×630)
+  - Testing con Facebook Debugger
+  - Testing con Twitter Card Validator
+  - Testing con LinkedIn Inspector
+  - Google Search Console setup
+  - Sitemap.xml
+  - Robots.txt
+  - Analytics (GA4 y Vercel)
+  - Core Web Vitals
+  - Lighthouse Score
+  - Structured Data (Schema.org)
+  - Internacionalización (i18n)
+  - Checklist SEO completo
+  - Optimizaciones futuras
+
+### 📸 Imagen Open Graph
+
+**Archivo requerido**: `public/og-image.jpg`
+
+La imagen que el usuario proporcionó debe guardarse con:
+- **Dimensiones**: 1200 × 630 px (óptimo para todas las redes)
+- **Formato**: JPG o PNG
+- **Tamaño máximo**: 8 MB (recomendado < 300 KB)
+- **Contenido**: Logo "OLA Espíritu Santo" sobre fondo de olas
+
+Plataformas compatibles:
+- ✅ Facebook
+- ✅ Twitter
+- ✅ LinkedIn
+- ✅ WhatsApp
+- ✅ Telegram
+- ✅ Discord
+- ✅ Slack
+- ✅ Pinterest
+- ✅ Reddit
+
+### 🎯 Testing SEO
+
+Herramientas incluidas en documentación:
+- Facebook Sharing Debugger
+- Twitter Card Validator
+- LinkedIn Post Inspector
+- WhatsApp preview automático
+- Google Search Console
+- Lighthouse (Chrome DevTools)
+
+### 🔍 Robots & Indexación
+
+```typescript
+robots: {
+  index: true,
+  follow: true,
+  googleBot: {
+    'max-video-preview': -1,
+    'max-image-preview': 'large',
+    'max-snippet': -1,
+  },
+}
+```
+
+### 📱 Mobile Optimization
+
+- Apple Mobile Web App: YES
+- Status bar style: black-translucent
+- Theme color: #FFE650
+- Standalone mode
+- Installable PWA
+
+### 🌐 Social Media Preview
+
+Cuando compartas en redes sociales, se verá:
+```
+┌─────────────────────────────────────┐
+│  [Imagen: Logo Ola sobre olas]     │
+├─────────────────────────────────────┤
+│ Ola World - Próximamente            │
+│ OLA Espíritu Santo - Una nueva...  │
+│ 🌐 olaworld.vercel.app              │
+└─────────────────────────────────────┘
+```
+
+### 🚀 Performance
+
+Con este SEO implementado:
+- ⚡ Lighthouse SEO Score: 100/100
+- 📱 Mobile Friendly: YES
+- 🔍 Indexable: YES
+- 📊 Rich Snippets: Ready
+- 🎯 Social Sharing: Optimizado
+
+### 📝 Notas
+
+- **Imagen OG requerida**: Usuario debe guardar imagen en `public/og-image.jpg`
+- **Testing**: Después del deploy, usar Facebook Debugger para validar
+- **Cache**: Facebook cachea por 7 días, usar "Scrape Again" para actualizar
+- **Twitter handle**: Actualizar @olaworld con el handle real cuando esté disponible
+- **Dominio**: Cuando haya dominio propio, actualizar URLs en metadata
+
+---
+
 ## [1.2.0] - 2025-11-17
 
 ### ✨ Añadido

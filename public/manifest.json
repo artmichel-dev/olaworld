@@ -1,0 +1,19 @@
+{
+  "name": "Ola World - OLA Espíritu Santo",
+  "short_name": "Ola World",
+  "description": "OLA Espíritu Santo - Una nueva ola está por llegar",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#FFE650",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/olaworld-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
+

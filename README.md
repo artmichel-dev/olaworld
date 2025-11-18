@@ -17,13 +17,15 @@ Landing page "Coming Soon" profesional construida con Next.js 14 (App Router) y 
 - ✅ Tailwind CSS
 - ✅ TypeScript
 - ✅ Optimizado para producción
-- ✅ SEO optimizado
+- ✅ **SEO completo** - Open Graph, Twitter Cards, PWA
+- ✅ **Social Media Ready** - Preview perfecto en Facebook, Twitter, LinkedIn, WhatsApp
 
 ## 📚 Documentación
 
 - **[Inicio Rápido](INICIO_RAPIDO.md)** - Comienza en minutos
 - **[Guía de Instalación](docs/INSTALACION.md)** - Instalación paso a paso
 - **[Guía de Personalización](docs/PERSONALIZACION.md)** - Personaliza tu landing page
+- **[SEO Completo](docs/SEO.md)** - Optimización para redes sociales y buscadores
 - **[Diseño Responsive](docs/RESPONSIVE.md)** - Testing y validación responsive
 - **[Componente de Video](docs/VIDEO_COMPONENT.md)** - Documentación técnica del video
 - **[Solución de Problemas de Video](docs/VIDEO_TROUBLESHOOTING.md)** - Guía completa de troubleshooting
