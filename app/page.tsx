@@ -19,7 +19,7 @@ export default function Home() {
       <div className="absolute inset-0 bg-black/30 z-10" />
       
       {/* Contenedor principal con flex layout */}
-      <div className="relative z-20 flex flex-col items-center justify-center w-full h-full pb-20">
+      <div className="relative z-20 flex flex-col items-center justify-center w-full h-full pb-24 sm:pb-20">
         {/* Logo Hero - Responsive */}
         <div className="w-64 sm:w-80 md:w-96 lg:w-[32rem] xl:w-[40rem] max-w-[90vw] px-4 sm:px-6 md:px-8">
           <Image
@@ -40,7 +40,7 @@ export default function Home() {
       
       {/* Footer */}
       <footer className="absolute bottom-0 w-full bg-transparent z-20">
-        <p className="text-xs sm:text-sm text-white/70 text-center py-4 md:py-6 w-full">
+        <p className="text-xs sm:text-sm text-white/70 text-center py-5 sm:py-4 md:py-6 w-full">
           ©2025 Ola World, some rights reserved.
         </p>
       </footer>

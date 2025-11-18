@@ -1,6 +1,18 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
+// Viewport y Theme Color (Next.js 14.2+ requiere export separado)
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#FFE650" },
+    { media: "(prefers-color-scheme: dark)", color: "#000000" },
+  ],
+};
+
+// Metadata principal
 export const metadata: Metadata = {
   title: "Ola World - Próximamente | Coming Soon",
   description: "OLA Espíritu Santo - Una nueva ola está por llegar. Próximamente descubre una experiencia única que transformará tu forma de conectar con el mundo.",
@@ -63,19 +75,8 @@ export const metadata: Metadata = {
     },
   },
   
-  // Manifest y tema
+  // PWA Manifest
   manifest: "/manifest.json",
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#FFE650" },
-    { media: "(prefers-color-scheme: dark)", color: "#000000" },
-  ],
-  
-  // Viewport (Next.js 14 lo maneja automáticamente, pero podemos especificar)
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 1,
-  },
 };
 
 export default function RootLayout({
@@ -86,8 +87,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <head>
-        {/* Meta tags adicionales para SEO */}
-        <meta name="theme-color" content="#FFE650" />
+        {/* Meta tags adicionales para Apple PWA */}
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <meta name="apple-mobile-web-app-title" content="Ola World" />
