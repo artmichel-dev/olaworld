@@ -1,60 +1,55 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800;900&family=Lora:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=DM+Sans:wght@400;500;600;700;800;900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Perspective Blog Design System - Warm & Vibrant */
+/* OLA World Design System - Warm Rose & Cream Theme */
 
 @layer base {
   :root {
-    /* Base Colors - Warm Cream Theme */
-    --background: 32 71% 91%; /* #fce5cf - Warm cream */
-    --foreground: 0 0% 0%; /* Pure black */
+    /* Base Colors - Light Theme */
+    --background: 30 50% 96%; /* Warm cream/off-white */
+    --foreground: 0 28% 35%; /* Deep rose brown for text */
 
     /* Card Colors */
-    --card: 32 71% 91%;
-    --card-foreground: 0 0% 0%;
+    --card: 30 50% 96%;
+    --card-foreground: 0 28% 35%;
 
-    /* Primary Action Colors */
-    --primary: 322 82% 83%; /* #f7b0e0 - Lavender */
-    --primary-foreground: 0 0% 0%;
-    --primary-hover: 29 100% 50%; /* #fc8500 - Orange */
+    /* Primary - Rose/Terracotta */
+    --primary: 0 35% 55%; /* Dusty rose/terracotta */
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 0 40% 45%;
 
-    /* Secondary Actions */
-    --secondary: 288 38% 40%; /* #7C3F8D - Deep Purple */
+    /* Secondary - Deep Rose */
+    --secondary: 0 28% 65%; /* Lighter rose */
     --secondary-foreground: 0 0% 100%;
-    --secondary-hover: 288 38% 32%; /* #6B3678 - Purple Hover */
+    --secondary-hover: 0 28% 55%;
 
     /* Accent Colors */
-    --accent-red: 16 100% 50%; /* #ff5400 */
-    --accent-pink: 332 100% 73%; /* #ff75ba */
+    --accent-rose: 0 35% 55%;
+    --accent-cream: 30 50% 96%;
 
-    /* Vibrant Card Backgrounds */
-    --card-yellow: 45 91% 62%; /* #F6C744 */
-    --card-purple: 273 61% 78%; /* #C8A8E9 */
-    --card-magenta: 321 68% 57%; /* #D946A0 */
-    --card-blue: 199 92% 73%; /* #7DD3FC */
-    --card-coral: 349 89% 72%; /* #FB7185 */
-    --card-mint: 156 72% 67%; /* #6EE7B7 */
-    --card-orange: 24 90% 61%; /* #FB923C */
-    --card-lavender: 248 84% 84%; /* #C4B5FD */
+    /* Muted */
+    --muted: 0 20% 90%;
+    --muted-foreground: 0 20% 50%;
 
-    /* Dark Mode Colors */
-    --dark-background: 20 18% 16%; /* #2D2520 */
-    --dark-card: 20 14% 25%; /* #4A3F37 */
-    --dark-muted: 20 12% 37%; /* #6B5D52 */
+    /* Vibrant Card Backgrounds - Adapted to rose theme */
+    --card-rose: 0 35% 60%;
+    --card-rose-light: 0 40% 75%;
+    --card-cream: 30 50% 90%;
+    --card-warm: 20 45% 85%;
 
     /* Status Colors */
-    --success: 158 64% 52%; /* #10b981 */
-    --warning: 38 92% 50%; /* #f59e0b */
-    --error: 0 84% 60%; /* #ef4444 */
-    --info: 188 86% 43%; /* #06b6d4 */
+    --success: 158 64% 52%;
+    --warning: 38 92% 50%;
+    --error: 0 84% 60%;
+    --info: 188 86% 43%;
 
     /* UI Elements */
-    --border: 0 0% 0%;
-    --input: 0 0% 0%;
-    --ring: 288 38% 40%;
+    --border: 0 28% 35%;
+    --input: 0 28% 35%;
+    --ring: 0 35% 55%;
     --radius: 1.5rem;
 
     /* Transitions */
@@ -64,12 +59,12 @@
   }
 
   .dark {
-    --background: 20 18% 16%; /* #2D2520 */
-    --foreground: 32 71% 91%; /* #fce5cf */
-    --card: 20 14% 25%;
-    --card-foreground: 32 71% 91%;
-    --border: 20 12% 37%;
-    --input: 20 12% 37%;
+    --background: 0 20% 12%;
+    --foreground: 30 50% 90%;
+    --card: 0 18% 18%;
+    --card-foreground: 30 50% 90%;
+    --border: 0 20% 30%;
+    --input: 0 20% 30%;
   }
 }
 
@@ -84,7 +79,7 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: "Lora", Georgia, serif;
+    font-family: "DM Sans", system-ui, -apple-system, sans-serif;
   }
 
   h1,
@@ -93,19 +88,16 @@
   h4,
   h5,
   h6,
-  button,
-  nav,
-  .heading,
-  .sans-serif {
-    font-family: "Supreme", system-ui, -apple-system, sans-serif;
+  .heading {
+    font-family: "Playfair Display", Georgia, serif;
   }
 }
 
 @layer components {
-  /* Button Styles - Two Variants Only */
+  /* Button Styles */
   .btn-filled {
-    @apply bg-[hsl(var(--primary))] hover:bg-[hsl(var(--primary-hover))] 
-           border-2 border-foreground text-foreground uppercase font-bold 
+    @apply bg-primary hover:bg-primary-hover 
+           text-primary-foreground uppercase font-bold 
            py-3 px-7 rounded-full inline-flex items-center gap-2 
            transition-all duration-200;
     transition-timing-function: cubic-bezier(0.34, 1, 0.64, 1);
@@ -118,29 +110,45 @@
            transition-all duration-200;
   }
 
+  .btn-outline-light {
+    @apply bg-transparent hover:bg-white/20
+           border-2 border-white text-white uppercase font-bold 
+           py-3 px-7 rounded-full inline-flex items-center gap-2 
+           transition-all duration-200;
+  }
+
   /* Card Hover Effect */
   .card-hover {
     @apply transition-transform duration-500 hover:scale-[1.02];
     transition-timing-function: cubic-bezier(0.34, 1, 0.64, 1);
   }
 
+  /* Section Card */
+  .section-card {
+    @apply border border-foreground/20 rounded-lg p-6 text-center;
+  }
+
   /* Typography Styles */
   .heading-xl {
-    @apply font-black text-6xl md:text-8xl lg:text-9xl uppercase 
-           tracking-tighter leading-[0.72];
+    @apply font-bold text-5xl md:text-7xl lg:text-8xl 
+           tracking-tight leading-[0.9];
+    font-family: "Playfair Display", Georgia, serif;
   }
 
   .heading-lg {
-    @apply font-extrabold md:font-black text-3xl md:text-5xl lg:text-5xl
+    @apply font-bold text-3xl md:text-5xl lg:text-6xl
            tracking-normal leading-tight;
+    font-family: "Playfair Display", Georgia, serif;
   }
 
   .heading-md {
-    @apply font-extrabold text-2xl md:text-3xl tracking-normal;
+    @apply font-bold text-2xl md:text-3xl tracking-normal;
+    font-family: "Playfair Display", Georgia, serif;
   }
 
   .heading-sm {
-    @apply font-bold text-xl uppercase tracking-tight;
+    @apply font-semibold text-xl tracking-tight;
+    font-family: "Playfair Display", Georgia, serif;
   }
 
   .nav-text {
@@ -148,28 +156,29 @@
   }
 
   .body-text {
-    @apply font-normal leading-[1.25] text-[2rem] md:text-[3.2rem];
-    font-family: "Lora", Georgia, serif;
+    @apply font-normal leading-relaxed text-base md:text-lg;
   }
 
   /* Footer Styles */
   .footer-header {
-    @apply uppercase font-bold text-xs md:text-sm tracking-[1.8px] text-foreground mb-3 md:mb-4;
+    @apply uppercase font-bold text-xs md:text-sm tracking-[1.8px] text-white/80 mb-3 md:mb-4;
   }
 
   .footer-link {
-    @apply underline decoration-2 text-sm md:text-base text-foreground
+    @apply underline decoration-1 text-sm md:text-base text-white
            hover:opacity-70 transition-opacity duration-200;
   }
 
-  /* Article Title with Responsive Sizing */
-  .article-title {
-    font-size: 120px;
+  /* Rose overlay for images */
+  .rose-overlay {
+    position: relative;
   }
-
-  @media (max-width: 700px) {
-    .article-title {
-      font-size: 60px;
-    }
+  
+  .rose-overlay::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: hsl(var(--primary) / 0.3);
+    mix-blend-mode: multiply;
   }
 }
