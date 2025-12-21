@@ -1,5 +1,5 @@
 import heroImage from "@/assets/hero-child.jpg";
-import olaLogo from "@/assets/ola-logo.png";
+import olaLogo from "@/assets/ola-logo-white.svg";
 import Button from "./Button";
 
 const HeroSection = () => {
