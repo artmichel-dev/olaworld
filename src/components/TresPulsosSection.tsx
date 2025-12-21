@@ -43,7 +43,7 @@ const TresPulsosSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Image */}
           <div className="relative rounded-2xl overflow-hidden">
-            <img src="/assets/conference.jpg" alt="Conferencia OLA World" className="w-full h-[300px] md:h-[400px] object-cover" />
+            <img src="/assets/prayer.jpg" alt="Conferencia OLA World" className="w-full h-[300px] md:h-[400px] object-cover" />
             <div className="absolute inset-0 bg-black/40" />
             <div className="absolute inset-0 flex items-center justify-center">
               <h3 className="text-white text-3xl md:text-4xl font-serif italic text-center px-4">

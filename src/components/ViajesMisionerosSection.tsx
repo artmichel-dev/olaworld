@@ -3,7 +3,7 @@ const ViajesMisionerosSection = () => {
     <section id="viajes" className="relative scroll-mt-20" aria-labelledby="viajes-heading">
       {/* Background Image */}
       <div className="relative h-[50vh] md:h-[60vh]">
-        <img src="/assets/prayer.jpg" alt="Grupo de misioneros orando juntos - Viajes Misioneros OLA World" className="w-full h-full object-cover" loading="lazy" />
+        <img src="/assets/kenya.jpg" alt="Grupo de misioneros orando juntos - Viajes Misioneros OLA World" className="w-full h-full object-cover" loading="lazy" />
         <div className="absolute inset-0 bg-black/50" />
         <div className="absolute inset-0 flex items-center justify-center">
           <h2 id="viajes-heading" className="text-white text-4xl md:text-6xl lg:text-7xl font-serif italic text-center">

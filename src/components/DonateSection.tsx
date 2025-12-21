@@ -18,7 +18,7 @@ const DonateSection = () => {
       {/* Airplane Image */}
       <div className="px-5 md:px-20 pb-16">
         <div className="rounded-2xl overflow-hidden max-w-4xl mx-auto">
-          <img src="/assets/airplane.jpg" alt="Avión misionero en África" className="w-full h-[300px] md:h-[400px] object-cover" />
+          <img src="/assets/airplane.webp" alt="Avión misionero en África" className="w-full h-[300px] md:h-[400px] object-cover" />
         </div>
       </div>
 
