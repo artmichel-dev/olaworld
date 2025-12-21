@@ -1,6 +1,6 @@
 const ViajesMisionerosSection = () => {
   return (
-    <section className="relative">
+    <section id="viajes" className="relative scroll-mt-20">
       {/* Background Image */}
       <div className="relative h-[50vh] md:h-[60vh]">
         <img src="/assets/prayer.jpg" alt="Viajes Misioneros" className="w-full h-full object-cover" />

@@ -1,6 +1,6 @@
 const VisionMisionSection = () => {
   return (
-    <section className="bg-background">
+    <section id="vision" className="bg-background scroll-mt-20">
       {/* Vision */}
       <div className="px-5 md:px-20 py-16 md:py-24">
         <h2 className="heading-lg text-center text-primary mb-12 font-serif italic">VISIÓN</h2>

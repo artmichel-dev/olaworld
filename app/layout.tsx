@@ -6,6 +6,11 @@ export const metadata: Metadata = {
   title: "OLA World - Lifestyle, Wellness & Personal Growth Blog",
   description: "I'm a fashion curator sharing my passion for timeless style, sustainable design, and the stories behind what we wear. From building capsule wardrobes to discovering emerging designers, this is where we celebrate fashion as a form of self-expression and mindful creativity.",
   authors: [{ name: "OLA World" }],
+  icons: {
+    icon: "/olaworld-icon.svg",
+    shortcut: "/olaworld-icon.svg",
+    apple: "/olaworld-icon.svg",
+  },
   openGraph: {
     type: "website",
     title: "OLA World - Lifestyle, Wellness & Personal Growth Blog",

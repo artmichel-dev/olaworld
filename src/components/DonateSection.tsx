@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const DonateSection = () => {
   return (
-    <section className="bg-primary">
+    <section id="donar" className="bg-primary scroll-mt-20">
       {/* Donate Header */}
       <div className="px-5 md:px-20 py-12 md:py-16 text-center mx-auto">
         <h2 className="heading-lg text-white font-serif italic mb-8">Dona aquí</h2>
@@ -23,7 +23,7 @@ const DonateSection = () => {
       </div>
 
       {/* Contact */}
-      <div className="px-5 md:px-20 pb-16 text-center mx-auto">
+      <div id="contacto" className="px-5 md:px-20 pb-16 text-center mx-auto">
         <h3 className="text-white font-serif italic text-2xl md:text-3xl mb-4">Contactanos Aquí</h3>
         <Link href="https://www.instagram.com/thefellowship.tc/" target="_blank">
           <Button variant="transparent" className=" border-white text-white hover:bg-white hover:text-primary">
