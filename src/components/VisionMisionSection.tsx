@@ -46,7 +46,7 @@ const VisionMisionSection = () => {
 
       {/* Mission Image with Quote */}
       <div className="relative">
-        <img src="/assets/mission-image.jpg" alt="Misioneros de OLA World sirviendo en comunidades africanas" className="w-full h-[50vh] md:h-[60vh] object-cover" loading="lazy" />
+        <img src="/assets/mission-image.jpg" alt="Misioneros de OLA World sirviendo en comunidades africanas" className="w-full h-[60vh] md:h-[120vh] object-cover" loading="lazy" />
         <div className="absolute inset-0 bg-black/20" />
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 w-[90%] max-w-3xl">
           <div className="bg-white/90 backdrop-blur-sm rounded-full py-4 px-8 text-center">
