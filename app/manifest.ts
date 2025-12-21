@@ -15,7 +15,7 @@ export default function manifest(): MetadataRoute.Manifest {
         src: "/olaworld-icon.svg",
         sizes: "any",
         type: "image/svg+xml",
-        purpose: "any maskable",
+        purpose: "maskable",
       },
     ],
     categories: ["religious", "lifestyle", "education"],

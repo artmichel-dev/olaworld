@@ -7,13 +7,14 @@ import Button from "@/components/Button";
 import { articles } from "@/data/articles";
 
 interface PageProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }
 
-export default function ArticlePage({ params }: PageProps) {
-  const article = articles.find((a) => a.slug === params.slug);
+export default async function ArticlePage({ params }: PageProps) {
+  const { slug } = await params;
+  const article = articles.find((a) => a.slug === slug);
 
   if (!article) {
     notFound();
