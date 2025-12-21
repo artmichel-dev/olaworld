@@ -22,8 +22,8 @@ export default {
         "sm-590": "590px",
       },
       fontFamily: {
-        sans: ["Supreme", "system-ui", "-apple-system", "sans-serif"],
-        serif: ["Lora", "Georgia", "serif"],
+        sans: ["DM Sans", "system-ui", "-apple-system", "sans-serif"],
+        serif: ["Playfair Display", "Georgia", "serif"],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -41,29 +41,27 @@ export default {
           foreground: "hsl(var(--secondary-foreground))",
           hover: "hsl(var(--secondary-hover))",
         },
-        accent: {
-          red: "hsl(var(--accent-red))",
-          pink: "hsl(var(--accent-pink))",
+        muted: {
+          DEFAULT: "hsl(var(--muted))",
+          foreground: "hsl(var(--muted-foreground))",
         },
-        vibrant: {
-          yellow: "hsl(var(--card-yellow))",
-          purple: "hsl(var(--card-purple))",
-          magenta: "hsl(var(--card-magenta))",
-          blue: "hsl(var(--card-blue))",
-          coral: "hsl(var(--card-coral))",
-          mint: "hsl(var(--card-mint))",
-          orange: "hsl(var(--card-orange))",
-          lavender: "hsl(var(--card-lavender))",
+        accent: {
+          rose: "hsl(var(--accent-rose))",
+          cream: "hsl(var(--accent-cream))",
+        },
+        card: {
+          DEFAULT: "hsl(var(--card))",
+          foreground: "hsl(var(--card-foreground))",
+          rose: "hsl(var(--card-rose))",
+          "rose-light": "hsl(var(--card-rose-light))",
+          cream: "hsl(var(--card-cream))",
+          warm: "hsl(var(--card-warm))",
         },
         status: {
           success: "hsl(var(--success))",
           warning: "hsl(var(--warning))",
           error: "hsl(var(--error))",
           info: "hsl(var(--info))",
-        },
-        card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
         },
       },
       borderRadius: {
@@ -88,10 +86,21 @@ export default {
             height: "0",
           },
         },
+        "fade-in": {
+          from: {
+            opacity: "0",
+            transform: "translateY(20px)",
+          },
+          to: {
+            opacity: "1",
+            transform: "translateY(0)",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "fade-in": "fade-in 0.6s ease-out forwards",
       },
     },
   },

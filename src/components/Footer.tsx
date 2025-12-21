@@ -1,65 +1,35 @@
-import NewsletterForm from "./NewsletterForm";
+import olaLogoFooter from "@/assets/ola-logo-footer.png";
+import { Instagram } from "lucide-react";
 
 const Footer = () => {
-  const helpLinks = [{ label: "CONTACT", href: "mailto:hello@vesper.com" }];
-
-  const socialLinks = [
-    { label: "INSTAGRAM", href: "https://instagram.com" },
-    { label: "TWITTER", href: "https://twitter.com" },
-    { label: "PINTEREST", href: "https://pinterest.com" },
-  ];
-
   return (
-    <footer className="bg-accent-red text-foreground">
-      <div className="px-5 md:px-20 py-12 md:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-x-12 lg:gap-x-16 items-start">
-          {/* Logo Section */}
-          <div className="md:col-span-1">
-            <div className="font-serif text-3xl md:text-4xl font-bold italic">
-              VESPER
-            </div>
-          </div>
-
-          {/* Connect */}
-          <div className="md:col-span-1">
-            <h3 className="footer-header">CONNECT</h3>
-            <nav className="flex flex-col gap-2">
-              {helpLinks.map((link) => (
-                <a key={link.label} href={link.href} className="footer-link">
-                  {link.label}
-                </a>
-              ))}
-            </nav>
-          </div>
-
+    <footer className="bg-primary text-white px-5 md:px-20 py-12 md:py-16">
+      <div className="max-w-6xl mx-auto">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
           {/* Social */}
-          <div className="md:col-span-1">
-            <h3 className="footer-header">FOLLOW</h3>
-            <nav className="flex flex-col gap-2">
-              {socialLinks.map((link) => (
-                <a
-                  key={link.label}
-                  href={link.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="footer-link"
-                >
-                  {link.label}
-                </a>
-              ))}
-            </nav>
+          <div>
+            <p className="text-xs uppercase tracking-wide text-white/70 mb-3">SOCIAL</p>
+            <a 
+              href="https://instagram.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-white hover:opacity-70 transition-opacity"
+            >
+              <Instagram className="w-5 h-5" />
+              <span>Instagram</span>
+            </a>
           </div>
 
-          {/* Newsletter */}
-          <div id="newsletter" className="md:col-span-1">
-            <NewsletterForm inputClassName="min-w-72" />
+          {/* Logo */}
+          <div>
+            <img src={olaLogoFooter} alt="OLA World" className="h-16 md:h-20" />
           </div>
         </div>
 
-        {/* Copyright */}
-        <div className="mt-12 pt-6 border-t border-foreground/20">
-          <p className="text-sm text-center md:text-left uppercase">
-            © 2025 VESPER. ALL RIGHTS RESERVED.
+        {/* Bottom */}
+        <div className="mt-12 pt-8 border-t border-white/20 text-center">
+          <p className="text-white/80 text-sm">
+            Iniciativa global de The Fellowship of Texas City
           </p>
         </div>
       </div>
