@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import olaLogo from "@/assets/ola-logo.png";
+import olaLogo from "@/assets/ola-logo-color.svg";
 
 const Header = () => {
   return (
