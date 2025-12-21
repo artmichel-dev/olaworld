@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=DM+Sans:wght@400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* OLA World Design System - Warm Rose & Cream Theme */
+
+@layer base {
+  :root {
+    /* Base Colors - Light Theme */
+    --background: 30 50% 96%; /* Warm cream/off-white */
+    --foreground: 0 28% 35%; /* Deep rose brown for text */
+
+    /* Card Colors */
+    --card: 30 50% 96%;
+    --card-foreground: 0 28% 35%;
+
+    /* Primary - Rose/Terracotta */
+    --primary: 0 35% 55%; /* Dusty rose/terracotta */
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 0 40% 45%;
+
+    /* Secondary - Deep Rose */
+    --secondary: 0 28% 65%; /* Lighter rose */
+    --secondary-foreground: 0 0% 100%;
+    --secondary-hover: 0 28% 55%;
+
+    /* Accent Colors */
+    --accent-rose: 0 35% 55%;
+    --accent-cream: 30 50% 96%;
+
+    /* Muted */
+    --muted: 0 20% 90%;
+    --muted-foreground: 0 20% 50%;
+
+    /* Vibrant Card Backgrounds - Adapted to rose theme */
+    --card-rose: 0 35% 60%;
+    --card-rose-light: 0 40% 75%;
+    --card-cream: 30 50% 90%;
+    --card-warm: 20 45% 85%;
+
+    /* Status Colors */
+    --success: 158 64% 52%;
+    --warning: 38 92% 50%;
+    --error: 0 84% 60%;
+    --info: 188 86% 43%;
+
+    /* UI Elements */
+    --border: 0 28% 35%;
+    --input: 0 28% 35%;
+    --ring: 0 35% 55%;
+    --radius: 1.5rem;
+
+    /* Transitions */
+    --transition-fast: 150ms ease-in-out;
+    --transition-medium: 300ms ease-in-out;
+    --transition-slow: 500ms cubic-bezier(0.34, 1, 0.64, 1);
+  }
+
+  .dark {
+    --background: 0 20% 12%;
+    --foreground: 30 50% 90%;
+    --card: 0 18% 18%;
+    --card-foreground: 30 50% 90%;
+    --border: 0 20% 30%;
+    --input: 0 20% 30%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "DM Sans", system-ui, -apple-system, sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .heading {
+    font-family: "Playfair Display", Georgia, serif;
+  }
+}
+
+@layer components {
+  /* Button Styles */
+  .btn-filled {
+    @apply bg-primary hover:bg-primary-hover 
+           text-primary-foreground uppercase font-bold 
+           py-3 px-7 rounded-full inline-flex items-center gap-2 
+           transition-all duration-200;
+    transition-timing-function: cubic-bezier(0.34, 1, 0.64, 1);
+  }
+
+  .btn-transparent {
+    @apply bg-transparent hover:bg-foreground hover:text-background
+           border-2 border-foreground text-foreground uppercase font-bold 
+           py-3 px-7 rounded-full inline-flex items-center gap-2 
+           transition-all duration-200;
+  }
+
+  .btn-outline-light {
+    @apply bg-transparent hover:bg-white/20
+           border-2 border-white text-white uppercase font-bold 
+           py-3 px-7 rounded-full inline-flex items-center gap-2 
+           transition-all duration-200;
+  }
+
+  /* Card Hover Effect */
+  .card-hover {
+    @apply transition-transform duration-500 hover:scale-[1.02];
+    transition-timing-function: cubic-bezier(0.34, 1, 0.64, 1);
+  }
+
+  /* Section Card */
+  .section-card {
+    @apply border border-foreground/20 rounded-lg p-6 text-center;
+  }
+
+  /* Typography Styles */
+  .heading-xl {
+    @apply font-bold text-5xl md:text-7xl lg:text-8xl 
+           tracking-tight leading-[0.9];
+    font-family: "Playfair Display", Georgia, serif;
+  }
+
+  .heading-lg {
+    @apply font-bold text-3xl md:text-5xl lg:text-6xl
+           tracking-normal leading-tight;
+    font-family: "Playfair Display", Georgia, serif;
+  }
+
+  .heading-md {
+    @apply font-bold text-2xl md:text-3xl tracking-normal;
+    font-family: "Playfair Display", Georgia, serif;
+  }
+
+  .heading-sm {
+    @apply font-semibold text-xl tracking-tight;
+    font-family: "Playfair Display", Georgia, serif;
+  }
+
+  .nav-text {
+    @apply uppercase font-bold text-sm tracking-[1.8px];
+  }
+
+  .body-text {
+    @apply font-normal leading-relaxed text-base md:text-lg;
+  }
+
+  /* Footer Styles */
+  .footer-header {
+    @apply uppercase font-bold text-xs md:text-sm tracking-[1.8px] text-white/80 mb-3 md:mb-4;
+  }
+
+  .footer-link {
+    @apply underline decoration-1 text-sm md:text-base text-white
+           hover:opacity-70 transition-opacity duration-200;
+  }
+
+  /* Rose overlay for images */
+  .rose-overlay {
+    position: relative;
+  }
+
+  .rose-overlay::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: hsl(var(--primary) / 0.3);
+    mix-blend-mode: multiply;
+  }
+}

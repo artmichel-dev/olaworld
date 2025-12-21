@@ -1,4 +1,3 @@
-import conferenceImage from "@/assets/conference.jpg";
 import { ClipboardList, Users, Waves } from "lucide-react";
 
 const TresPulsosSection = () => {
@@ -9,19 +8,17 @@ const TresPulsosSection = () => {
           {/* Left - Title */}
           <div>
             <h2 className="heading-lg text-primary font-serif italic leading-tight">
-              TRES PULSOS<br />DE LA OLA
+              TRES PULSOS
+              <br />
+              DE LA OLA
             </h2>
           </div>
 
           {/* Right - Content */}
           <div className="space-y-6">
-            <p className="text-foreground/80 text-base md:text-lg leading-relaxed">
-              Ola World es un movimiento vivo que avanza en tres pulsos.
-            </p>
-            <p className="text-primary font-semibold text-lg">
-              Tocar. Crecer. Impactar.
-            </p>
-            
+            <p className="text-foreground/80 text-base md:text-lg leading-relaxed">Ola World es un movimiento vivo que avanza en tres pulsos.</p>
+            <p className="text-primary font-semibold text-lg">Tocar. Crecer. Impactar.</p>
+
             <ul className="space-y-4 text-foreground/80">
               <li>
                 <span className="font-semibold text-foreground">• Primer pulso: Outreach.</span>
@@ -46,15 +43,13 @@ const TresPulsosSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Image */}
           <div className="relative rounded-2xl overflow-hidden">
-            <img
-              src={conferenceImage}
-              alt="Conferencia OLA World"
-              className="w-full h-[300px] md:h-[400px] object-cover"
-            />
+            <img src="/assets/conference.jpg" alt="Conferencia OLA World" className="w-full h-[300px] md:h-[400px] object-cover" />
             <div className="absolute inset-0 bg-black/40" />
             <div className="absolute inset-0 flex items-center justify-center">
               <h3 className="text-white text-3xl md:text-4xl font-serif italic text-center px-4">
-                El pulso comienza<br />contigo...
+                El pulso comienza
+                <br />
+                contigo...
               </h3>
             </div>
           </div>
