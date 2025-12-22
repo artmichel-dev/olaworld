@@ -1,9 +1,11 @@
+import VideoBackground from "./VideoBackground";
+
 const ViajesMisionerosSection = () => {
   return (
     <section id="viajes" className="relative scroll-mt-20" aria-labelledby="viajes-heading">
-      {/* Background Image */}
-      <div className="relative h-[50vh] md:h-[60vh]">
-        <img src="/assets/kenya.jpg" alt="Grupo de misioneros orando juntos - Viajes Misioneros OLA World" className="w-full h-full object-cover" loading="lazy" />
+      {/* Background Video */}
+      <div className="relative h-[50vh] md:h-[60vh] overflow-hidden">
+        <VideoBackground videoUrl="https://cdn.zupernova.dev/olaworld/hls/misiones_480p.m3u8" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-black/50" />
         <div className="absolute inset-0 flex items-center justify-center">
           <h2 id="viajes-heading" className="text-white text-4xl md:text-6xl lg:text-7xl font-serif italic text-center">

@@ -25,8 +25,8 @@ const DonateSection = () => {
       {/* Contact */}
       <div id="contacto" className="px-5 md:px-20 pb-16 text-center mx-auto">
         <h3 className="text-white font-serif italic text-2xl md:text-3xl mb-4">Contactanos Aquí</h3>
-        <Link href="https://www.instagram.com/thefellowship.tc/" target="_blank">
-          <Button variant="transparent" className=" border-white text-white hover:bg-white hover:text-primary">
+        <Link href="mailto:contacto@olaworld.org">
+          <Button variant="transparent" className="border-white text-white hover:bg-white hover:text-primary">
             CONTACTO
           </Button>
         </Link>

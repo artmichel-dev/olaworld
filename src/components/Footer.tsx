@@ -8,7 +8,7 @@ const Footer = () => {
           {/* Social */}
           <div>
             <p className="text-xs uppercase tracking-wide text-white/70 mb-3">SOCIAL</p>
-            <a href="https://www.instagram.com/thefellowship.tc/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-white hover:opacity-70 transition-opacity">
+            <a href="https://www.instagram.com/olaespiritusanto/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-white hover:opacity-70 transition-opacity">
               <Instagram className="w-5 h-5" />
               <span>Instagram</span>
             </a>
