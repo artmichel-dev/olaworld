@@ -1,0 +1,177 @@
+{
+  "metadata": {
+    "title": "OLA World - Outreach, Leadership & Activation | Mission Trips",
+    "description": "OLA World is a global movement from The Fellowship that touches lives, develops leaders, and sends them to impact communities. Join our mission trips to Kenya, Oaxaca, and more. Outreach, Leadership, Activation.",
+    "keywords": ["OLA World", "mission trips", "missions", "Kenya", "Oaxaca", "evangelism", "The Fellowship", "Christian leadership", "missionary activation", "outreach", "2026 mission trips", "medical mission trip", "pastoral formation", "training centers"],
+    "homeTitle": "OLA World - Home | 2026 Mission Trips",
+    "homeDescription": "Discover OLA World: Outreach, Leadership, Activation. Join our mission trips to Kenya and Oaxaca 2026. Touch lives, develop leadership, and impact communities.",
+    "ogTitle": "OLA World - Outreach, Leadership & Activation | Mission Trips",
+    "ogDescription": "Global movement that touches lives, develops leaders, and sends them to impact communities. Join our mission trips to Kenya, Oaxaca, and more.",
+    "ogImageAlt": "OLA World - Mission Trips",
+    "twitterTitle": "OLA World - Outreach, Leadership & Activation",
+    "twitterDescription": "Global movement that touches lives, develops leaders, and sends them to impact communities."
+  },
+  "navigation": {
+    "vision": "Vision",
+    "trips": "Trips",
+    "donate": "Donate",
+    "contact": "Contact"
+  },
+  "hero": {
+    "tagline": "Outreach - Leadership - Activation",
+    "cta": "APPLY NOW",
+    "logoAlt": "OLA World Logo - Outreach Leadership Activation",
+    "imageAlt": "Smiling African child - OLA World impact in communities",
+    "applyAriaLabel": "Apply for mission trip"
+  },
+  "vision": {
+    "title": "VISION",
+    "subtitle": "TOUCH LIVES · DEVELOP LEADERS · AND SEND THEM TO IMPACT COMMUNITIES AND NATIONS.",
+    "outreach": {
+      "label": "TOUCH LIVES",
+      "title": "OUTREACH"
+    },
+    "leadership": {
+      "label": "DEVELOP LEADERS",
+      "title": "LEADERSHIP"
+    },
+    "activation": {
+      "label": "AND SEND THEM TO IMPACT COMMUNITIES AND NATIONS.",
+      "title": "ACTIVATION"
+    }
+  },
+  "mission": {
+    "title": "MISSION",
+    "card1": "CREATE GLOBAL OPPORTUNITIES FOR SERVICE, EVANGELISM, AND COMPASSION",
+    "card2": "OPEN TRAINING CENTERS FOR PASTORS AND MISSIONARIES",
+    "card3": "AND ORDAIN THEM MINISTERIALLY TO SEND THEM WITH PURPOSE",
+    "verse": "\"The earth will be filled with the knowledge of the Lord as the waters cover the sea.\"",
+    "reference": "Isaiah 11:9",
+    "imageAlt": "OLA World missionaries serving in African communities"
+  },
+  "threePulses": {
+    "title": "THREE PULSES OF THE WAVE",
+    "intro": "OLA World is a living movement that advances in three pulses.",
+    "subtitle": "Touch. Grow. Impact.",
+    "pulse1": {
+      "title": "• First pulse: Outreach.",
+      "description": "We touch lives by bringing the knowledge of God to the earth."
+    },
+    "pulse2": {
+      "title": "• Second pulse: Leadership.",
+      "description": "We grow people, forming leaders who walk with purpose."
+    },
+    "pulse3": {
+      "title": "• Third pulse: Activation.",
+      "description": "We activate the called to impact the world with faith in action."
+    },
+    "callout": "The pulse begins with you...",
+    "item1": "Mission trips",
+    "item2": "Training centers",
+    "item3": "OLA Conferences",
+    "imageAlt": "OLA World Conference"
+  },
+  "trips": {
+    "title": "2026 Mission Trips",
+    "oaxaca": {
+      "region": "The mountains of",
+      "title": "Oaxaca, Mexico",
+      "imageAlt": "Mountain landscape of Oaxaca, Mexico - Mission trip destination"
+    },
+    "kenya": {
+      "title": "Kenya, Africa",
+      "imageAlt": "Kenya landscape, Africa - Medical evangelistic mission trip destination"
+    }
+  },
+  "kenya": {
+    "subtitle": "Medical Evangelistic Mission Trip",
+    "title": "Kenya, Africa",
+    "dates": "Dates:",
+    "datesValue": "October 10-22, 2026",
+    "locations": "Locations:",
+    "locationsValue": "Turkana County Lokichogio and Nymira Kenya",
+    "description1": "In October 2026, we will return to Kenya to experience a medical evangelistic mission trip serving in two different regions of the country. During this time, we will be ministering in both Turkana County, specifically in Lokichogio, as well as in Nymira Kenya.",
+    "description2": "This trip combines evangelism, medical care, practical help, and pastoral formation with one purpose: to bring hope, the message of Jesus, and real support to communities that need it deeply.",
+    "withWhom": {
+      "title": "Who we will serve with",
+      "content": "The Fellowship Global Missions team will serve alongside missionaries and local leaders from Deliverance Church Super Highway and pastors from churches in Nymira that walk under the covering of The Fellowship. It will be a work in unity, shoulder to shoulder, learning from each other and serving together."
+    },
+    "activities": {
+      "title": "What we will be doing during the trip",
+      "item1": "• House-to-house evangelism and evangelistic crusades.",
+      "item2": "• Provide medical care and food support.",
+      "item3": "• Strengthen the local Church and pastoral leadership in Kenya.",
+      "item4": "• Ordain and affirm pastors who will serve in the Nymira region.",
+      "item5": "• Conduct programs for children in orphanages with biblical teaching and comprehensive care activities.",
+      "item6": "• Prepare and train missionary teams to serve in different contexts around the world."
+    },
+    "preparation": {
+      "title": "Team preparation",
+      "content": "All participants will go through an application and interview process. Before the trip, we will have preparation and training times to arrive spiritually, culturally, and as a team aligned. Upon arriving in Kenya, we will connect with local leaders and walk together throughout the entire ministry development in both Turkana and Nymira."
+    },
+    "closing": {
+      "title": "Trip closure",
+      "content": "On the last day of the trip, we will have the opportunity to visit one of the safaris in Kenya as part of the closing and celebration of everything God did during those days."
+    },
+    "whoCanApply": {
+      "title": "Who can apply",
+      "content": "People over 18 years old with a heart for missions, evangelism, and service can apply. Medical professionals such as doctors, nurses, dentists, and healthcare personnel are also welcome. A valid passport is required, but a United States visa is not necessary."
+    },
+    "cost": {
+      "title": "Trip cost",
+      "intro": "This trip not only covers the team's participation but also directly supports the local missionary work and the two medical-evangelistic projects we will be conducting in Turkana and Nymira Kenya.",
+      "fromUS": {
+        "text": "If you travel from the United States,",
+        "amount": "$3,500",
+        "details": "This cost includes international flights, internal air and ground transportation within Kenya, food, lodging, safari, and the necessary expenses to carry out trip activities."
+      },
+      "fromLatinAmerica": {
+        "text": "If you travel from Latin America,",
+        "amount": "$2,000",
+        "details": "This amount does not include the international flight to Kenya. The international flight will be purchased separately through a travel agency that will work with us in Latin America. This cost does include air and ground transportation within Kenya, food, lodging, safari, and operational trip expenses."
+      },
+      "contribution": "In both cases, the cost also contributes to sponsoring a local missionary in Nairobi and covering the logistics, materials, and activities costs of the two medical-evangelistic projects that will be developed in Turkana and Nymira."
+    },
+    "ctaTitle": "Apply here",
+    "ctaButton": "APPLY NOW",
+    "imageAlt": "Mission team in Kenya"
+  },
+  "donate": {
+    "title": "Donate here",
+    "button": "DONATE NOW",
+    "buttonAria": "Go to donation page on Donorbox",
+    "imageAlt": "Mission airplane in Africa"
+  },
+  "contact": {
+    "title": "Contact Us Here",
+    "button": "CONTACT",
+    "buttonAria": "Send email to contacto@olaworld.org"
+  },
+  "footer": {
+    "social": "SOCIAL",
+    "instagram": "Instagram",
+    "logoAlt": "OLA World",
+    "tagline": "Global initiative of The Fellowship of Texas City"
+  },
+  "article": {
+    "readMore": "READ MORE",
+    "backToBlog": "← BACK TO BLOG",
+    "youMightLike": "YOU MIGHT ALSO LIKE"
+  },
+  "notFound": {
+    "title": "404",
+    "message": "Oops! Page not found",
+    "backHome": "Return to Home"
+  },
+  "newsletter": {
+    "placeholder": "SUBSCRIBE TO THE NEWSLETTER",
+    "button": "SIGN UP",
+    "submitting": "SIGNING UP...",
+    "successMessage": "Thanks for subscribing!"
+  },
+  "languageSwitcher": {
+    "label": "Change language",
+    "spanish": "Español",
+    "english": "English"
+  }
+}

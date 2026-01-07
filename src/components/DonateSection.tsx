@@ -1,8 +1,14 @@
+"use client";
+
 import Button from "./Button";
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 const DonateSection = () => {
+  const tDonate = useTranslations("donate");
+  const tContact = useTranslations("contact");
+
   return (
     <section
       id="donar"
@@ -15,20 +21,20 @@ const DonateSection = () => {
           id="donate-heading"
           className="heading-lg text-white font-serif italic mb-8"
         >
-          Dona aquí
+          {tDonate("title")}
         </h2>
 
         <Link
           href="https://donorbox.org/olaworld"
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="Ir a la página de donaciones en Donorbox"
+          aria-label={tDonate("buttonAria")}
         >
           <Button
             variant="transparent"
             className="border-white text-white hover:bg-white hover:text-primary transition-all duration-200"
           >
-            DONAR AHORA
+            {tDonate("button")}
           </Button>
         </Link>
       </div>
@@ -38,7 +44,7 @@ const DonateSection = () => {
         <div className="rounded-2xl overflow-hidden max-w-4xl mx-auto shadow-lg">
           <Image
             src="/assets/airplane.webp"
-            alt="Avión misionero en África"
+            alt={tDonate("imageAlt")}
             width={1024}
             height={400}
             className="w-full h-[300px] md:h-[400px] object-cover"
@@ -57,17 +63,17 @@ const DonateSection = () => {
           id="contact-heading"
           className="heading-md text-white font-serif italic mb-4"
         >
-          Contáctanos Aquí
+          {tContact("title")}
         </h3>
         <Link
           href="mailto:contacto@olaworld.org"
-          aria-label="Enviar correo electrónico a contacto@olaworld.org"
+          aria-label={tContact("buttonAria")}
         >
           <Button
             variant="transparent"
             className="border-white text-white hover:bg-white hover:text-primary transition-all duration-200"
           >
-            CONTACTO
+            {tContact("button")}
           </Button>
         </Link>
       </div>

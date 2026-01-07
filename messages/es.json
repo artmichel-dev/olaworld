@@ -1,0 +1,177 @@
+{
+  "metadata": {
+    "title": "OLA World - Outreach, Leadership & Activation | Viajes Misioneros",
+    "description": "OLA World es un movimiento global de The Fellowship que toca vidas, desarrolla líderes y los envía para impactar comunidades. Únete a nuestros viajes misioneros a Kenya, Oaxaca y más. Outreach, Leadership, Activation.",
+    "keywords": ["OLA World", "viajes misioneros", "misiones", "Kenya", "Oaxaca", "evangelismo", "The Fellowship", "liderazgo cristiano", "activación misionera", "outreach", "viajes misioneros 2026", "viaje misionero médico", "formación pastoral", "centros de entrenamiento"],
+    "homeTitle": "OLA World - Inicio | Viajes Misioneros 2026",
+    "homeDescription": "Descubre OLA World: Outreach, Leadership, Activation. Únete a nuestros viajes misioneros a Kenya y Oaxaca 2026. Toca vidas, desarrolla liderazgo e impacta comunidades.",
+    "ogTitle": "OLA World - Outreach, Leadership & Activation | Viajes Misioneros",
+    "ogDescription": "Movimiento global que toca vidas, desarrolla líderes y los envía para impactar comunidades. Únete a nuestros viajes misioneros a Kenya, Oaxaca y más.",
+    "ogImageAlt": "OLA World - Viajes Misioneros",
+    "twitterTitle": "OLA World - Outreach, Leadership & Activation",
+    "twitterDescription": "Movimiento global que toca vidas, desarrolla líderes y los envía para impactar comunidades."
+  },
+  "navigation": {
+    "vision": "Visión",
+    "trips": "Viajes",
+    "donate": "Donar",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "tagline": "Outreach - Leadership - Activation",
+    "cta": "APLICAR AHORA",
+    "logoAlt": "Logo OLA World - Outreach Leadership Activation",
+    "imageAlt": "Niño africano sonriendo - Impacto de OLA World en comunidades",
+    "applyAriaLabel": "Aplicar para viaje misionero"
+  },
+  "vision": {
+    "title": "VISIÓN",
+    "subtitle": "TOCAR VIDAS · DESARROLLAR LÍDERES · Y ENVIARLOS PARA IMPACTAR COMUNIDADES Y NACIONES.",
+    "outreach": {
+      "label": "TOCAR VIDAS",
+      "title": "OUTREACH"
+    },
+    "leadership": {
+      "label": "DESARROLLAR LÍDERES",
+      "title": "LEADERSHIP"
+    },
+    "activation": {
+      "label": "Y ENVIARLOS PARA IMPACTAR COMUNIDADES Y NACIONES.",
+      "title": "ACTIVATION"
+    }
+  },
+  "mission": {
+    "title": "MISIÓN",
+    "card1": "CREAR OPORTUNIDADES GLOBALES DE SERVICIO, EVANGELISMO Y COMPASIÓN",
+    "card2": "ABRIR CENTROS DE ENTRENAMIENTO PARA PASTORES Y MISIONEROS",
+    "card3": "Y ORDENARLOS MINISTERIALMENTE PARA ENVIARLOS CON PROPÓSITO",
+    "verse": "\"La tierra se llenará del conocimiento del Señor como las aguas cubren el mar.\"",
+    "reference": "Isaías 11:9",
+    "imageAlt": "Misioneros de OLA World sirviendo en comunidades africanas"
+  },
+  "threePulses": {
+    "title": "TRES PULSOS DE LA OLA",
+    "intro": "Ola World es un movimiento vivo que avanza en tres pulsos.",
+    "subtitle": "Tocar. Crecer. Impactar.",
+    "pulse1": {
+      "title": "• Primer pulso: Outreach.",
+      "description": "Tocamos vidas llevando el conocimiento de Dios a la tierra."
+    },
+    "pulse2": {
+      "title": "• Segundo pulso: Leadership.",
+      "description": "Crecemos personas, formando líderes que caminan con propósito."
+    },
+    "pulse3": {
+      "title": "• Tercer pulso: Activation.",
+      "description": "Activamos a los llamados para impactar el mundo con fe en acción."
+    },
+    "callout": "El pulso comienza contigo...",
+    "item1": "Viajes misioneros",
+    "item2": "Centros de entrenamiento",
+    "item3": "Conferencias OLA",
+    "imageAlt": "Conferencia OLA World"
+  },
+  "trips": {
+    "title": "Viajes Misioneros 2026",
+    "oaxaca": {
+      "region": "La sierra de",
+      "title": "Oaxaca, México",
+      "imageAlt": "Paisaje montañoso de la sierra de Oaxaca, México - Destino de viaje misionero"
+    },
+    "kenya": {
+      "title": "Kenya, Africa",
+      "imageAlt": "Paisaje de Kenya, África - Destino de viaje misionero médico evangelístico"
+    }
+  },
+  "kenya": {
+    "subtitle": "Viaje Misionero Médico Evangelístico",
+    "title": "Kenia, Africa",
+    "dates": "Fechas:",
+    "datesValue": "10 al 22 de Octubre de 2026",
+    "locations": "Lugares:",
+    "locationsValue": "Turkana County Lokichogio y Nymira Kenia",
+    "description1": "En Octubre de 2026 regresaremos a Kenia para vivir un viaje misionero médico evangelístico sirviendo en dos regiones distintas del país. Durante este tiempo estaremos ministrando tanto en Turkana County, específicamente en Lokichogio, como también en Nymira Kenia.",
+    "description2": "Este viaje une evangelismo, atención médica, ayuda práctica y formación pastoral con un solo propósito: llevar esperanza, el mensaje de Jesús y apoyo real a comunidades que lo necesitan profundamente.",
+    "withWhom": {
+      "title": "Con quién serviremos",
+      "content": "El equipo de The Fellowship Global Missions servirá junto a misioneros y líderes locales de Deliverance Church Super Highway y a pastores de las iglesias en Nymira que caminan bajo la cobertura de The Fellowship. Será un trabajo en unidad, hombro a hombro, aprendiendo unos de otros y sirviendo juntos."
+    },
+    "activities": {
+      "title": "Lo que estaremos haciendo durante el viaje",
+      "item1": "• Evangelismo de casa en casa y cruzadas evangelísticas.",
+      "item2": "• Brindar atención médica y apoyo alimentario.",
+      "item3": "• Fortalecer la Iglesia local y el liderazgo pastoral en Kenia.",
+      "item4": "• Ordenar y afirmar a pastores que servirán en la región de Nymira.",
+      "item5": "• Realizar programas para niños en orfanatos con actividades de enseñanza bíblica y cuidado integral.",
+      "item6": "• Preparar y formar equipos misioneros para servir en diferentes contextos alrededor del mundo."
+    },
+    "preparation": {
+      "title": "Preparación del equipo",
+      "content": "Todos los participantes pasarán por un proceso de aplicación y entrevistas. Antes del viaje tendremos tiempos de preparación y entrenamiento, para llegar alineados espiritualmente, culturalmente y como equipo. Al llegar a Kenia conectaremos con los líderes locales y caminaremos juntos durante todo el desarrollo del ministerio tanto en Turkana como en Nymira."
+    },
+    "closing": {
+      "title": "Cierre del viaje",
+      "content": "En el último día del viaje tendremos la oportunidad de visitar uno de los safaris en Kenia como parte del cierre y celebración de todo lo que Dios hizo durante esos días."
+    },
+    "whoCanApply": {
+      "title": "Quién puede aplicar",
+      "content": "Pueden aplicar personas mayores de 18 años con un corazón para las misiones, el evangelismo y el servicio. También son bienvenidos profesionales del área médica, como doctores, enfermeros, dentistas y personal de salud. Es necesario tener un pasaporte válido, pero no es necesario tener una visa de los Estados Unidos."
+    },
+    "cost": {
+      "title": "Costo del viaje",
+      "intro": "Este viaje no solo cubre la participación del equipo sino que sostiene directamente la obra misionera local y los dos proyectos médico evangelísticos que estaremos realizando en Turkana y Nymira Kenia.",
+      "fromUS": {
+        "text": "Si viajas desde Estados Unidos,",
+        "amount": "3,500 dólares",
+        "details": "Este costo incluye vuelos internacionales, transporte aéreo interno y terrestre dentro de Kenia, alimentos, hospedaje, safari y los gastos necesarios para llevar a cabo las actividades del viaje."
+      },
+      "fromLatinAmerica": {
+        "text": "Si viajas desde Latinoamérica,",
+        "amount": "2,000 dólares",
+        "details": "Este monto no incluye el vuelo internacional hacia Kenia. El vuelo internacional se comprará por separado a través de una agencia de viajes que trabajará con nosotros en Latinoamérica. Este costo sí incluye el transporte aéreo y terrestre dentro de Kenia, los alimentos, el hospedaje, el safari y los gastos operativos del viaje."
+      },
+      "contribution": "En ambos casos, el costo también contribuye a patrocinar a un misionero local en Nairobi y a cubrir los costos de logística, materiales y actividades de los dos proyectos médico-evangelísticos que se desarrollarán en Turkana y Nymira."
+    },
+    "ctaTitle": "Aplica aquí",
+    "ctaButton": "APLICAR AHORA",
+    "imageAlt": "Equipo misionero en Kenia"
+  },
+  "donate": {
+    "title": "Dona aquí",
+    "button": "DONAR AHORA",
+    "buttonAria": "Ir a la página de donaciones en Donorbox",
+    "imageAlt": "Avión misionero en África"
+  },
+  "contact": {
+    "title": "Contáctanos Aquí",
+    "button": "CONTACTO",
+    "buttonAria": "Enviar correo electrónico a contacto@olaworld.org"
+  },
+  "footer": {
+    "social": "SOCIAL",
+    "instagram": "Instagram",
+    "logoAlt": "OLA World",
+    "tagline": "Iniciativa global de The Fellowship of Texas City"
+  },
+  "article": {
+    "readMore": "READ MORE",
+    "backToBlog": "← BACK TO BLOG",
+    "youMightLike": "YOU MIGHT ALSO LIKE"
+  },
+  "notFound": {
+    "title": "404",
+    "message": "Oops! Página no encontrada",
+    "backHome": "Volver al Inicio"
+  },
+  "newsletter": {
+    "placeholder": "SUBSCRIBE TO THE NEWSLETTER",
+    "button": "SIGN UP",
+    "submitting": "SIGNING UP...",
+    "successMessage": "Thanks for subscribing!"
+  },
+  "languageSwitcher": {
+    "label": "Cambiar idioma",
+    "spanish": "Español",
+    "english": "English"
+  }
+}

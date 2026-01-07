@@ -1,6 +1,9 @@
-import Link from "next/link";
+"use client";
+
+import { Link } from "@/navigation";
 import { cn } from "@/lib/utils";
 import Button from "./Button";
+import { useTranslations } from "next-intl";
 
 interface ArticleCardProps {
   title: string;
@@ -12,6 +15,8 @@ interface ArticleCardProps {
 }
 
 const ArticleCard = ({ title, excerpt, date, image, slug, colorClass = "bg-vibrant-purple" }: ArticleCardProps) => {
+  const t = useTranslations("article");
+
   return (
     <Link href={`/article/${slug}`} className="block">
       <article className={cn("card-hover rounded-3xl overflow-hidden flex flex-col h-full", colorClass)}>
@@ -29,7 +34,7 @@ const ArticleCard = ({ title, excerpt, date, image, slug, colorClass = "bg-vibra
           <h2 className="text-5xl md:text-6xl leading-[0.8] mb-3 font-sans font-extrabold tracking-tighter">{title}</h2>
           <p className="text-sm md:text-base leading-relaxed text-foreground/80 mb-4 flex-1 line-clamp-3 font-serif">{excerpt}</p>
           <Button variant="filled" className="text-xs py-2 px-5 self-start">
-            READ MORE
+            {t("readMore")}
           </Button>
         </div>
       </article>

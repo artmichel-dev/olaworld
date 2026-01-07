@@ -1,10 +1,13 @@
 "use client";
 
-import Link from "next/link";
+import { Link } from "@/navigation";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { useTranslations } from "next-intl";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const Header = () => {
+  const t = useTranslations("navigation");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -16,10 +19,10 @@ const Header = () => {
   };
 
   const menuItems = [
-    { href: "#vision", label: "Visión" },
-    { href: "#viajes", label: "Viajes" },
-    { href: "#donar", label: "Donar" },
-    { href: "#contacto", label: "Contacto" },
+    { href: "#vision", label: t("vision") },
+    { href: "#viajes", label: t("trips") },
+    { href: "#donar", label: t("donate") },
+    { href: "#contacto", label: t("contact") },
   ];
 
   return (
@@ -38,6 +41,8 @@ const Header = () => {
                 {item.label}
               </a>
             ))}
+            {/* Language Switcher - Desktop */}
+            <LanguageSwitcher />
           </nav>
 
           {/* Mobile Menu Button */}
@@ -48,7 +53,7 @@ const Header = () => {
       </div>
 
       {/* Mobile Menu */}
-      <div className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${isMenuOpen ? "max-h-64 opacity-100" : "max-h-0 opacity-0"}`}>
+      <div className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${isMenuOpen ? "max-h-80 opacity-100" : "max-h-0 opacity-0"}`}>
         <nav className="px-5 py-4 bg-background border-t border-foreground/10">
           <ul className="space-y-4">
             {menuItems.map((item) => (
@@ -58,6 +63,10 @@ const Header = () => {
                 </a>
               </li>
             ))}
+            {/* Language Switcher - Mobile */}
+            <li className="pt-2 border-t border-foreground/10">
+              <LanguageSwitcher />
+            </li>
           </ul>
         </nav>
       </div>

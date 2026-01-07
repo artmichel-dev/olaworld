@@ -1,3 +1,5 @@
+import { getMessages } from "next-intl/server";
+import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
@@ -7,12 +9,28 @@ import ViajesMisionerosSection from "@/components/ViajesMisionerosSection";
 import KenyaTripSection from "@/components/KenyaTripSection";
 import DonateSection from "@/components/DonateSection";
 
-export const metadata = {
-  title: "OLA World - Inicio | Viajes Misioneros 2026",
-  description: "Descubre OLA World: Outreach, Leadership, Activation. Únete a nuestros viajes misioneros a Kenya y Oaxaca 2026. Toca vidas, desarrolla liderazgo e impacta comunidades.",
-};
+export async function generateMetadata({
+  params
+}: {
+  params: Promise<{ locale: string }>
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const messages = await getMessages({ locale });
+  const metadata = messages.metadata as any;
 
-export default function Home() {
+  return {
+    title: metadata.homeTitle,
+    description: metadata.homeDescription,
+  };
+}
+
+export default async function Home({
+  params
+}: {
+  params: Promise<{ locale: string }>
+}) {
+  await params; // Just await params to satisfy Next.js
+
   return (
     <div className="min-h-screen bg-background">
       <Header />
