@@ -79,7 +79,7 @@ export async function generateMetadata({
       canonical: locale === 'es' ? "https://olaworld.org" : "https://olaworld.org/us",
       languages: {
         'es': 'https://olaworld.org',
-        'us': 'https://olaworld.org/us',
+        'en-US': 'https://olaworld.org/us',
       },
     },
     category: "Religious Organization",
