@@ -55,7 +55,7 @@ export async function generateMetadata({
     openGraph: {
       type: "website",
       locale: locale === 'es' ? "es_ES" : "en_US",
-      url: `https://olaworld.org${locale === 'en' ? '/en' : ''}`,
+      url: `https://olaworld.org${locale === 'us' ? '/us' : ''}`,
       siteName: "OLA World",
       title: metadata.ogTitle,
       description: metadata.ogDescription,
@@ -76,10 +76,10 @@ export async function generateMetadata({
       creator: "@thefellowship.tc",
     },
     alternates: {
-      canonical: locale === 'es' ? "https://olaworld.org" : "https://olaworld.org/en",
+      canonical: locale === 'es' ? "https://olaworld.org" : "https://olaworld.org/us",
       languages: {
         'es': 'https://olaworld.org',
-        'en': 'https://olaworld.org/en',
+        'us': 'https://olaworld.org/us',
       },
     },
     category: "Religious Organization",

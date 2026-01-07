@@ -21,7 +21,7 @@ export default function LanguageSwitcher() {
       <div className="flex items-center gap-2">
         {locales.map((loc) => (
           <button key={loc} onClick={() => handleLanguageChange(loc)} className={`text-sm font-medium transition-colors ${locale === loc ? "text-foreground font-bold underline underline-offset-2" : "text-foreground hover:text-foreground"}`} aria-label={`${t("label")} - ${loc === "es" ? t("spanish") : t("english")}`} aria-current={locale === loc ? "true" : undefined}>
-            {loc === "es" ? t("spanish") : t("english")}
+            {loc === "es" ? t("spanish") : t("us")}
           </button>
         ))}
       </div>

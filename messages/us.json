@@ -172,6 +172,7 @@
   "languageSwitcher": {
     "label": "Change language",
     "spanish": "Español",
-    "english": "English"
+    "english": "English",
+    "us": "US"
   }
 }
