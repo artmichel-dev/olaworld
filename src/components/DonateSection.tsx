@@ -8,7 +8,7 @@ const DonateSection = () => {
       <div className="px-5 md:px-20 py-12 md:py-16 text-center mx-auto">
         <h2 className="heading-lg text-white font-serif italic mb-8">Dona aquí</h2>
 
-        <Link href="https://thefellowshiptc.churchcenter.com/giving/to/missions" target="_blank">
+        <Link href="https://donorbox.org/olaworld" target="_blank">
           <Button variant="transparent" className="border-white text-white hover:bg-white hover:text-primary">
             DONAR AHORA
           </Button>

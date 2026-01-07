@@ -10,7 +10,7 @@ const KenyaTripSection = () => {
           <h2 className="text-primary font-serif italic text-xl md:text-2xl mb-2">Viaje Misionero Médico Evangelístico</h2>
           <h3 className="heading-md text-primary font-serif italic mb-4">Kenia, Africa</h3>
           <p className="text-foreground font-medium">
-            <span className="font-semibold">Fechas:</span> 11 al 22 de Octubre de 2026
+            <span className="font-semibold">Fechas:</span> 10 al 22 de Octubre de 2026
           </p>
           <p className="text-foreground font-medium">
             <span className="font-semibold">Lugares:</span> Turkana County Lokichogio y Nymira Kenia
