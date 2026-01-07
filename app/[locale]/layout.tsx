@@ -6,6 +6,17 @@ import { locales } from "../../i18n";
 import "../globals.css";
 import { Providers } from "../providers";
 
+interface MetadataMessages {
+  title: string;
+  description: string;
+  keywords: string[];
+  ogTitle: string;
+  ogDescription: string;
+  ogImageAlt: string;
+  twitterTitle: string;
+  twitterDescription: string;
+}
+
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
@@ -26,7 +37,7 @@ export async function generateMetadata({
   const { locale } = await params;
 
   const messages = await getMessages({ locale });
-  const metadata = messages.metadata as any;
+  const metadata = messages.metadata as MetadataMessages;
 
   return {
     metadataBase: new URL("https://olaworld.org"),
@@ -95,7 +106,7 @@ export default async function LocaleLayout({
 }) {
   const { locale } = await params;
 
-  if (!locales.includes(locale as any)) {
+  if (!locales.includes(locale as typeof locales[number])) {
     notFound();
   }
 

@@ -1,0 +1,158 @@
+# Instrucciones: Auto-cambio de idioma (ES raíz / EN en /US) — Next.js + Vercel
+
+## Contexto
+- Sitio desarrollado en Next.js y desplegado en Vercel desde GitHub.
+- Versión canónica en español: `/`
+- Versión en inglés: `/US`
+- Se desea redirigir automáticamente al usuario a su idioma correcto al ingresar al sitio.
+- La elección manual del idioma del usuario debe respetarse y persistir entre visitas.
+
+---
+
+## Objetivo funcional
+1. Cuando un usuario ingresa a la raíz `/`:
+   - Si su idioma preferido del navegador es inglés, redirigirlo a `/US`.
+   - Si su idioma preferido es español (o cualquier otro distinto de inglés), mantenerlo en `/`.
+2. Si el usuario ya está navegando en `/US` o cualquier subruta `/US/...`, no debe ocurrir ninguna redirección automática.
+3. Si el usuario selecciona manualmente un idioma:
+   - Guardar esa preferencia.
+   - En futuras visitas, esa preferencia debe tener prioridad sobre el idioma detectado del navegador.
+4. Evitar redirecciones infinitas y no interferir con rutas internas o recursos del framework.
+
+---
+
+## Estrategia general recomendada
+Usar **Middleware (Edge)** de Next.js para manejar la detección y redirección del idioma en el primer request.
+
+Motivos:
+- El middleware se ejecuta antes del renderizado.
+- Permite leer headers como `Accept-Language`.
+- Permite leer cookies de preferencia del usuario.
+- En Vercel funciona automáticamente sin configuración adicional.
+
+---
+
+## Tareas a implementar
+
+### 1) Configuración de internacionalización (i18n)
+Configurar el proyecto para que reconozca explícitamente los idiomas soportados:
+
+- Idiomas soportados: español (`es`) e inglés (`en`).
+- Idioma por defecto: español.
+- Desactivar cualquier detección automática nativa de Next.js para evitar duplicar lógica.
+- La estructura de URLs debe respetar:
+  - Español en `/`
+  - Inglés en `/US`
+
+Resultado esperado:
+- El framework reconoce ambos idiomas.
+- Español sigue siendo la versión raíz del sitio.
+
+---
+
+### 2) Middleware de detección y redirección de idioma
+Implementar un middleware con las siguientes reglas:
+
+#### A. Rutas que deben ignorarse
+El middleware **no debe ejecutarse** sobre:
+- Rutas internas del framework (por ejemplo assets, `_next`, etc.).
+- Endpoints de API.
+- Archivos estáticos (favicon, imágenes, fuentes, etc.).
+- Rutas que ya estén bajo `/US` (o subrutas `/US/...`).
+
+#### B. Punto de entrada de la lógica
+- La detección automática de idioma debe ejecutarse **únicamente cuando el usuario entra a la raíz `/`**.
+
+#### C. Selección del idioma
+El idioma final debe decidirse siguiendo este orden de prioridad:
+
+1. **Preferencia guardada del usuario**
+   - Leer una cookie de idioma (por ejemplo `NEXT_LOCALE`).
+   - Si existe y es válida, usarla sin considerar el idioma del navegador.
+2. **Idioma del navegador**
+   - Leer el header `Accept-Language`.
+   - Si el idioma preferido es inglés (`en`, `en-US`, `en-GB`, etc.), seleccionar inglés.
+   - En cualquier otro caso, usar español como fallback.
+
+#### D. Acción de redirección
+- Si el idioma seleccionado es inglés **y** el usuario está en `/`, redirigir a `/US`.
+- Si el idioma es español, no realizar ninguna redirección.
+
+#### E. Prevención de loops
+- Confirmar que el middleware nunca redirige:
+  - Desde `/US` hacia `/US`.
+  - Desde `/US/...` hacia otra ruta.
+- La redirección automática solo puede ocurrir desde `/` hacia `/US`.
+
+Resultado esperado:
+- Usuario con navegador en inglés entra a `/` ⇒ termina en `/US`.
+- Usuario con navegador en español entra a `/` ⇒ permanece en `/`.
+
+---
+
+### 3) Persistencia de la preferencia de idioma
+Agregar un mecanismo para guardar la elección del idioma del usuario:
+
+- Crear un endpoint interno o handler que reciba el idioma elegido (`es` o `en`).
+- Almacenar la preferencia en una cookie:
+  - Nombre consistente (ejemplo: `NEXT_LOCALE`).
+  - Aplicable a todo el sitio.
+  - Con duración prolongada.
+- La cookie debe ser leída por el middleware en requests posteriores.
+
+Uso desde el frontend:
+- Cuando el usuario cambia el idioma mediante el selector:
+  - Guardar la preferencia.
+  - Navegar inmediatamente a la ruta correspondiente (`/` o `/US`).
+
+Regla clave:
+- La cookie del usuario **siempre tiene prioridad** sobre `Accept-Language`.
+
+---
+
+### 4) Casos de prueba obligatorios
+Validar los siguientes escenarios:
+
+1. Navegador en inglés, sin cookie:
+   - Entrar a `/` ⇒ redirige a `/US`.
+2. Navegador en español, sin cookie:
+   - Entrar a `/` ⇒ permanece en `/`.
+3. Acceso directo a `/US` o `/US/...`:
+   - No ocurre ninguna redirección.
+4. Usuario selecciona inglés manualmente:
+   - Se guarda la cookie.
+   - Navega a `/US`.
+5. Con cookie en inglés:
+   - Entrar a `/` ⇒ redirige a `/US` aunque el navegador esté en español.
+6. Usuario selecciona español:
+   - Se guarda la cookie.
+   - Navega a `/`.
+7. Con cookie en español:
+   - Entrar a `/` ⇒ permanece en `/` aunque el navegador esté en inglés.
+
+---
+
+## Configuración en Vercel
+- No se requiere configuración especial en Vercel.
+- El middleware se ejecuta automáticamente en Edge.
+- Evitar reglas de redirect estáticas en `vercel.json` para este caso, ya que:
+  - No permiten lógica compleja.
+  - No respetan fácilmente cookies de usuario.
+
+---
+
+## Recomendaciones SEO (opcional)
+- Definir correctamente:
+  - `hreflang="es"` para la versión en `/`
+  - `hreflang="en"` para la versión en `/US`
+- Asegurar que cada versión tenga su `canonical` correcto.
+- No bloquear la indexación de `/US` si se desea posicionamiento en inglés.
+
+---
+
+## Entregables esperados del Agent
+1. Configuración i18n coherente con ES raíz y EN en `/US`.
+2. Middleware con lógica de detección, prioridad por cookie y redirección segura.
+3. Endpoint para persistir preferencia de idioma.
+4. Ajuste del selector de idioma para guardar preferencia y navegar.
+5. Validación completa de los casos de prueba definidos.

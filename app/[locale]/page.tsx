@@ -16,7 +16,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const messages = await getMessages({ locale });
-  const metadata = messages.metadata as any;
+  const metadata = messages.metadata as Record<string, string>;
 
   return {
     title: metadata.homeTitle,

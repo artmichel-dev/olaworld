@@ -11,8 +11,24 @@ export default function LanguageSwitcher() {
   const router = useRouter();
   const pathname = usePathname();
 
-  const handleLanguageChange = (newLocale: string) => {
-    router.replace(pathname, { locale: newLocale });
+  const handleLanguageChange = async (newLocale: string) => {
+    try {
+      // Save user's language preference to cookie
+      await fetch('/api/set-locale', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ locale: newLocale }),
+      });
+
+      // Navigate to the new locale
+      router.replace(pathname, { locale: newLocale });
+    } catch (error) {
+      console.error('Error setting locale:', error);
+      // Navigate anyway even if cookie setting fails
+      router.replace(pathname, { locale: newLocale });
+    }
   };
 
   return (
