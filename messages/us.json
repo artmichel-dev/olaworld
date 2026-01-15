@@ -136,6 +136,51 @@
     "ctaButton": "APPLY NOW",
     "imageAlt": "Mission team in Kenya"
   },
+  "oaxaca": {
+    "subtitle": "Mission Trip to the Mountains",
+    "title": "Oaxaca, Mexico",
+    "dates": "Dates:",
+    "datesValue": "To be confirmed - 2026",
+    "locations": "Locations:",
+    "locationsValue": "Indigenous communities in the Oaxaca Mountains",
+    "description1": "The Oaxaca mountains are home to indigenous communities living in hard-to-reach conditions who need to hear the message of hope from the gospel. This mission trip will take us to serve in small villages among the mountains.",
+    "description2": "During this trip, we will combine evangelism, community service, work with children and youth, and support for local churches serving in these remote regions.",
+    "withWhom": {
+      "title": "Who we will serve with",
+      "content": "We will work alongside local pastors and missionaries who know the communities and have established relationships of trust. We will serve shoulder to shoulder with leaders who love their people and are committed to bringing transformation to the mountains."
+    },
+    "activities": {
+      "title": "What we will be doing during the trip",
+      "item1": "• Evangelism in indigenous mountain communities.",
+      "item2": "• Programs for children and youth with biblical teaching.",
+      "item3": "• Support for local churches and leadership formation.",
+      "item4": "• Community service projects according to needs.",
+      "item5": "• Distribution of humanitarian aid and resources.",
+      "item6": "• Gospel testimony in indigenous languages with help from local translators."
+    },
+    "preparation": {
+      "title": "Team preparation",
+      "content": "All participants will go through an application process. Before the trip, we will have times of cultural and spiritual preparation to understand the context of indigenous communities. It's important to go with a humble heart and willingness to serve in basic conditions."
+    },
+    "whatToExpect": {
+      "title": "What to expect",
+      "content": "This trip involves hiking in mountainous terrain, lodging in simple conditions, and adaptation to local culture. It's a transformative experience that requires flexibility and a heart willing to be challenged and blessed by the faith of the communities."
+    },
+    "whoCanApply": {
+      "title": "Who can apply",
+      "content": "People 16 years and older can apply (under 18 must be accompanied by a guardian) with willingness to serve in rural and remote areas. Good physical condition is required for mountain hiking. It's not necessary to speak indigenous languages; we will work with local translators."
+    },
+    "cost": {
+      "title": "Trip cost",
+      "intro": "The trip cost covers transportation, lodging, food, and the service projects we will carry out in the communities.",
+      "amount": "To be confirmed",
+      "details": "The cost will include ground transportation from the meeting point, lodging in communities, food, materials for service projects, and support for local churches.",
+      "contribution": "Part of the cost also contributes to sustaining the ongoing work of missionaries and pastors who serve permanently in the Oaxaca mountains."
+    },
+    "ctaTitle": "Apply here",
+    "ctaButton": "APPLY NOW",
+    "imageAlt": "Oaxaca Mountains, Mexico"
+  },
   "donate": {
     "title": "Donate here",
     "button": "DONATE NOW",

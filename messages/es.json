@@ -136,6 +136,51 @@
     "ctaButton": "APLICAR AHORA",
     "imageAlt": "Equipo misionero en Kenia"
   },
+  "oaxaca": {
+    "subtitle": "Viaje Misionero a la Sierra",
+    "title": "Oaxaca, México",
+    "dates": "Fechas:",
+    "datesValue": "Por confirmar - 2026",
+    "locations": "Lugares:",
+    "locationsValue": "Comunidades indígenas de la Sierra de Oaxaca",
+    "description1": "La sierra de Oaxaca es hogar de comunidades indígenas que viven en condiciones de difícil acceso y necesitan escuchar el mensaje de esperanza del evangelio. Este viaje misionero nos llevará a servir en pequeñas aldeas entre las montañas.",
+    "description2": "Durante este viaje combinaremos evangelismo, servicio comunitario, trabajo con niños y jóvenes, y apoyo a las iglesias locales que sirven en estas regiones remotas.",
+    "withWhom": {
+      "title": "Con quién serviremos",
+      "content": "Trabajaremos junto a pastores y misioneros locales que conocen las comunidades y han establecido relaciones de confianza. Serviremos hombro a hombro con líderes que aman a su gente y están comprometidos con llevar transformación a la sierra."
+    },
+    "activities": {
+      "title": "Lo que estaremos haciendo durante el viaje",
+      "item1": "• Evangelismo en comunidades indígenas de la sierra.",
+      "item2": "• Programas para niños y jóvenes con enseñanza bíblica.",
+      "item3": "• Apoyo a iglesias locales y formación de líderes.",
+      "item4": "• Proyectos de servicio comunitario según las necesidades.",
+      "item5": "• Distribución de ayuda humanitaria y recursos.",
+      "item6": "• Testimonio del evangelio en lenguas indígenas con ayuda de traductores locales."
+    },
+    "preparation": {
+      "title": "Preparación del equipo",
+      "content": "Todos los participantes pasarán por un proceso de aplicación. Antes del viaje tendremos tiempos de preparación cultural y espiritual para entender el contexto de las comunidades indígenas. Es importante ir con corazón humilde y disposición para servir en condiciones básicas."
+    },
+    "whatToExpect": {
+      "title": "Qué esperar",
+      "content": "Este viaje involucra caminatas en terreno montañoso, alojamiento en condiciones sencillas, y adaptación a la cultura local. Es una experiencia transformadora que requiere flexibilidad y un corazón dispuesto a ser desafiado y bendecido por la fe de las comunidades."
+    },
+    "whoCanApply": {
+      "title": "Quién puede aplicar",
+      "content": "Pueden aplicar personas mayores de 16 años (menores de 18 deben ir acompañados de un tutor) con disposición para el servicio en áreas rurales y remotas. Se requiere buena condición física para caminatas en montaña. No es necesario hablar lenguas indígenas, trabajaremos con traductores locales."
+    },
+    "cost": {
+      "title": "Costo del viaje",
+      "intro": "El costo del viaje cubre transporte, alojamiento, alimentos y los proyectos de servicio que realizaremos en las comunidades.",
+      "amount": "Por confirmar",
+      "details": "El costo incluirá transporte terrestre desde el punto de reunión, alojamiento en las comunidades, alimentos, materiales para los proyectos de servicio y apoyo a las iglesias locales.",
+      "contribution": "Una parte del costo también contribuye a sostener el trabajo continuo de los misioneros y pastores que sirven permanentemente en la sierra de Oaxaca."
+    },
+    "ctaTitle": "Aplica aquí",
+    "ctaButton": "APLICAR AHORA",
+    "imageAlt": "Sierra de Oaxaca, México"
+  },
   "donate": {
     "title": "Dona aquí",
     "button": "DONAR AHORA",

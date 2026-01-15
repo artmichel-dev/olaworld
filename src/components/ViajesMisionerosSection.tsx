@@ -2,6 +2,7 @@
 
 import VideoBackground from "./VideoBackground";
 import { useTranslations } from "next-intl";
+import { Link } from "@/navigation";
 
 const ViajesMisionerosSection = () => {
   const t = useTranslations("trips");
@@ -25,23 +26,23 @@ const ViajesMisionerosSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {/* Oaxaca Card */}
-          <div className="relative rounded-2xl overflow-hidden group cursor-pointer card-hover">
+          <Link href="/oaxaca" className="relative rounded-2xl overflow-hidden group cursor-pointer card-hover block">
             <img src="/assets/oaxaca.jpg" alt={t("oaxaca.imageAlt")} className="w-full h-[300px] md:h-[350px] object-cover" loading="lazy" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
             <div className="absolute bottom-6 left-6 right-6">
               <p className="text-white/80 text-sm mb-1">{t("oaxaca.region")}</p>
               <h4 className="text-white text-2xl md:text-3xl font-serif italic">{t("oaxaca.title")}</h4>
             </div>
-          </div>
+          </Link>
 
           {/* Kenya Card */}
-          <div className="relative rounded-2xl overflow-hidden group cursor-pointer card-hover">
+          <Link href="/kenya" className="relative rounded-2xl overflow-hidden group cursor-pointer card-hover block">
             <img src="/assets/kenya.jpg" alt={t("kenya.imageAlt")} className="w-full h-[300px] md:h-[350px] object-cover" loading="lazy" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
             <div className="absolute bottom-6 left-6 right-6">
               <h4 className="text-white text-2xl md:text-3xl font-serif italic">{t("kenya.title")}</h4>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
     </section>
