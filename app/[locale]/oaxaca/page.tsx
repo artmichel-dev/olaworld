@@ -64,10 +64,21 @@ export default async function OaxacaPage({
 
         {/* Introduction Section */}
         <section className="bg-background py-16 md:py-20">
-          <div className="px-5 md:px-20 max-w-4xl mx-auto">
-            <p className="text-foreground/80 text-base md:text-lg leading-relaxed">
-              {t.intro as string}
-            </p>
+          <div className="px-5 md:px-20 max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <p className="text-foreground/80 text-base md:text-lg leading-relaxed">
+                  {t.intro as string}
+                </p>
+              </div>
+              <div className="rounded-2xl overflow-hidden shadow-lg">
+                <img 
+                  src="/assets/oaxaca_photo_01.jpg" 
+                  alt="Niños en ministerio Oaxaca"
+                  className="w-full h-[300px] md:h-[400px] object-cover"
+                />
+              </div>
+            </div>
           </div>
         </section>
 
@@ -146,6 +157,31 @@ export default async function OaxacaPage({
                   {(t.cultural as Record<string, string>).content}
                 </p>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Video Section */}
+        <section className="bg-card-cream py-16 md:py-20">
+          <div className="px-5 md:px-20 max-w-5xl mx-auto">
+            <div className="mb-8 text-center">
+              <h2 className="heading-md text-primary font-serif italic mb-4">
+                {locale === 'es' ? 'Conoce Más Sobre Nuestro Ministerio' : 'Learn More About Our Ministry'}
+              </h2>
+              <p className="text-foreground/80 text-base md:text-lg">
+                {locale === 'es' 
+                  ? 'Mira este video para ver el impacto de nuestros viajes misioneros anteriores en Oaxaca'
+                  : 'Watch this video to see the impact of our previous mission trips in Oaxaca'}
+              </p>
+            </div>
+            <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+              <iframe
+                className="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
+                src="https://www.youtube.com/embed/Zmkfap9AfRo"
+                title="Oaxaca Mission Trip Video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
             </div>
           </div>
         </section>
