@@ -137,48 +137,48 @@
     "imageAlt": "Equipo misionero en Kenia"
   },
   "oaxaca": {
-    "subtitle": "Viaje Misionero a la Sierra",
+    "subtitle": "Viaje Misionero de Evangelismo Médico",
     "title": "Oaxaca, México",
-    "dates": "Fechas:",
-    "datesValue": "Por confirmar - 2026",
-    "locations": "Lugares:",
-    "locationsValue": "Comunidades indígenas de la Sierra de Oaxaca",
-    "description1": "La sierra de Oaxaca es hogar de comunidades indígenas que viven en condiciones de difícil acceso y necesitan escuchar el mensaje de esperanza del evangelio. Este viaje misionero nos llevará a servir en pequeñas aldeas entre las montañas.",
-    "description2": "Durante este viaje combinaremos evangelismo, servicio comunitario, trabajo con niños y jóvenes, y apoyo a las iglesias locales que sirven en estas regiones remotas.",
-    "withWhom": {
-      "title": "Con quién serviremos",
-      "content": "Trabajaremos junto a pastores y misioneros locales que conocen las comunidades y han establecido relaciones de confianza. Serviremos hombro a hombro con líderes que aman a su gente y están comprometidos con llevar transformación a la sierra."
+    "dates": "25 al 28 de mayo",
+    "heroText": "Esto es más que un viaje. Es una invitación a entrar en lo que Dios está haciendo en México a través de la compasión, la acción y el poder del Evangelio.",
+    "intro": "Este viaje misionero de evangelismo médico está enfocado en llevar el amor de Jesús de una manera integral, espíritu, alma y cuerpo, a comunidades con acceso limitado a atención médica y recursos básicos. Creemos que la sanidad y la esperanza caminan juntas y que el Evangelio se comparte con mayor poder cuando se vive de manera práctica.",
+    "communities": {
+      "title": "Comunidades que Visitaremos",
+      "intro": "A lo largo de la semana estaremos sirviendo en tres comunidades ubicadas en las montañas de Oaxaca:",
+      "list1": "Santa María Teopoxco",
+      "list2": "San Isidro",
+      "list3": "Huautla"
     },
-    "activities": {
-      "title": "Lo que estaremos haciendo durante el viaje",
-      "item1": "• Evangelismo en comunidades indígenas de la sierra.",
-      "item2": "• Programas para niños y jóvenes con enseñanza bíblica.",
-      "item3": "• Apoyo a iglesias locales y formación de líderes.",
-      "item4": "• Proyectos de servicio comunitario según las necesidades.",
-      "item5": "• Distribución de ayuda humanitaria y recursos.",
-      "item6": "• Testimonio del evangelio en lenguas indígenas con ayuda de traductores locales."
+    "approach": "Nuestro enfoque es intencional e integral, combinando atención médica con un evangelismo valiente y lleno de amor. Llegamos para servir, escuchar, orar y caminar junto a las personas con humildad y fe.",
+    "medical": {
+      "title": "Ministerio Médico",
+      "content": "Ofreceremos consultas médicas básicas y servicios esenciales de salud a personas y familias que muchas veces tienen poco o ningún acceso a atención médica. Cada consulta es también una oportunidad para comunicar dignidad, cuidado y el amor de Cristo."
     },
-    "preparation": {
-      "title": "Preparación del equipo",
-      "content": "Todos los participantes pasarán por un proceso de aplicación. Antes del viaje tendremos tiempos de preparación cultural y espiritual para entender el contexto de las comunidades indígenas. Es importante ir con corazón humilde y disposición para servir en condiciones básicas."
+    "evangelism": {
+      "title": "Evangelismo y Ministerio Comunitario",
+      "content": "Compartiremos el Evangelio de Jesucristo a través de oración personal, evangelismo casa por casa, actividades con niños y reuniones evangelísticas comunitarias. Creemos que Dios se mueve poderosamente en momentos sencillos de obediencia cuando Su pueblo se presenta con amor."
     },
-    "whatToExpect": {
-      "title": "Qué esperar",
-      "content": "Este viaje involucra caminatas en terreno montañoso, alojamiento en condiciones sencillas, y adaptación a la cultura local. Es una experiencia transformadora que requiere flexibilidad y un corazón dispuesto a ser desafiado y bendecido por la fe de las comunidades."
+    "pastors": {
+      "title": "Ministerio a Pastores y Líderes",
+      "content": "Durante el viaje tendremos una noche especial de ministración y fortalecimiento espiritual para pastores y líderes locales en la Ciudad de México. Será un tiempo significativo de impartición, oración, ánimo y renovación para quienes sirven fielmente en el contexto urbano."
+    },
+    "cultural": {
+      "title": "Experiencia Cultural",
+      "content": "El viaje también incluye una experiencia cultural y turística en la Ciudad de México. Este tiempo permitirá al equipo conocer la historia, la cultura y la importancia espiritual de la nación, mientras se fortalecen la unidad, la conexión y los recuerdos compartidos como equipo."
     },
     "whoCanApply": {
-      "title": "Quién puede aplicar",
-      "content": "Pueden aplicar personas mayores de 16 años (menores de 18 deben ir acompañados de un tutor) con disposición para el servicio en áreas rurales y remotas. Se requiere buena condición física para caminatas en montaña. No es necesario hablar lenguas indígenas, trabajaremos con traductores locales."
+      "title": "Quiénes Pueden Participar",
+      "intro": "Este viaje misionero está abierto a personas que cumplan con los siguientes requisitos:",
+      "requirement1": "Pueden participar personas de 16 años en adelante.",
+      "requirement2": "Los participantes entre 16 y 18 años deberán viajar acompañados por uno de sus padres o un tutor legal responsable durante todo el viaje.",
+      "requirement3": "Todos los participantes deben contar con un pasaporte válido al momento de viajar.",
+      "requirement4": "Buscamos personas con un corazón evangelístico, compasión por los demás y un deseo genuino de servir en contextos diversos y en ocasiones desafiantes.",
+      "requirement5": "Damos la bienvenida de manera especial a profesionales de la salud, incluyendo doctores, enfermeras y otros proveedores médicos que deseen usar sus habilidades para llevar sanidad y esperanza a comunidades en necesidad.",
+      "requirement6": "También animamos a aplicar a participantes no médicos con un corazón de servicio. Hay muchas oportunidades para servir a través de la oración, el evangelismo, la logística, el ministerio con niños y el apoyo comunitario.",
+      "requirement7": "Todos los participantes deben mostrar madurez espiritual, disposición para aprender y una actitud humilde, flexible y llena de amor para trabajar en equipo."
     },
-    "cost": {
-      "title": "Costo del viaje",
-      "intro": "El costo del viaje cubre transporte, alojamiento, alimentos y los proyectos de servicio que realizaremos en las comunidades.",
-      "amount": "Por confirmar",
-      "details": "El costo incluirá transporte terrestre desde el punto de reunión, alojamiento en las comunidades, alimentos, materiales para los proyectos de servicio y apoyo a las iglesias locales.",
-      "contribution": "Una parte del costo también contribuye a sostener el trabajo continuo de los misioneros y pastores que sirven permanentemente en la sierra de Oaxaca."
-    },
-    "ctaTitle": "Aplica aquí",
-    "ctaButton": "APLICAR AHORA",
+    "ctaTitle": "Aplica Ahora",
+    "ctaButton": "APLICAR",
     "imageAlt": "Sierra de Oaxaca, México"
   },
   "donate": {

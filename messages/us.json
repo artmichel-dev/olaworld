@@ -137,48 +137,48 @@
     "imageAlt": "Mission team in Kenya"
   },
   "oaxaca": {
-    "subtitle": "Mission Trip to the Mountains",
+    "subtitle": "Medical Evangelism Mission Trip",
     "title": "Oaxaca, Mexico",
-    "dates": "Dates:",
-    "datesValue": "To be confirmed - 2026",
-    "locations": "Locations:",
-    "locationsValue": "Indigenous communities in the Oaxaca Mountains",
-    "description1": "The Oaxaca mountains are home to indigenous communities living in hard-to-reach conditions who need to hear the message of hope from the gospel. This mission trip will take us to serve in small villages among the mountains.",
-    "description2": "During this trip, we will combine evangelism, community service, work with children and youth, and support for local churches serving in these remote regions.",
-    "withWhom": {
-      "title": "Who we will serve with",
-      "content": "We will work alongside local pastors and missionaries who know the communities and have established relationships of trust. We will serve shoulder to shoulder with leaders who love their people and are committed to bringing transformation to the mountains."
+    "dates": "May 25-28",
+    "heroText": "This is more than a trip. It's an invitation to step into what God is doing in Mexico through compassion, action, and the power of the Gospel.",
+    "intro": "This medical evangelism mission trip is focused on bringing the love of Jesus in a holistic way—spirit, soul, and body—to communities with limited access to medical care and basic resources. We believe that healing and hope walk together, and that the Gospel is shared with greater power when lived out practically.",
+    "communities": {
+      "title": "Communities We Will Visit",
+      "intro": "Throughout the week we will be serving in three communities located in the Oaxaca mountains:",
+      "list1": "Santa María Teopoxco",
+      "list2": "San Isidro",
+      "list3": "Huautla"
     },
-    "activities": {
-      "title": "What we will be doing during the trip",
-      "item1": "• Evangelism in indigenous mountain communities.",
-      "item2": "• Programs for children and youth with biblical teaching.",
-      "item3": "• Support for local churches and leadership formation.",
-      "item4": "• Community service projects according to needs.",
-      "item5": "• Distribution of humanitarian aid and resources.",
-      "item6": "• Gospel testimony in indigenous languages with help from local translators."
+    "approach": "Our approach is intentional and comprehensive, combining medical care with bold and loving evangelism. We come to serve, listen, pray, and walk alongside people with humility and faith.",
+    "medical": {
+      "title": "Medical Ministry",
+      "content": "We will offer basic medical consultations and essential health services to individuals and families who often have little or no access to medical care. Each consultation is also an opportunity to communicate dignity, care, and the love of Christ."
     },
-    "preparation": {
-      "title": "Team preparation",
-      "content": "All participants will go through an application process. Before the trip, we will have times of cultural and spiritual preparation to understand the context of indigenous communities. It's important to go with a humble heart and willingness to serve in basic conditions."
+    "evangelism": {
+      "title": "Evangelism and Community Ministry",
+      "content": "We will share the Gospel of Jesus Christ through personal prayer, house-to-house evangelism, children's activities, and community evangelistic gatherings. We believe God moves powerfully in simple moments of obedience when His people show up with love."
     },
-    "whatToExpect": {
-      "title": "What to expect",
-      "content": "This trip involves hiking in mountainous terrain, lodging in simple conditions, and adaptation to local culture. It's a transformative experience that requires flexibility and a heart willing to be challenged and blessed by the faith of the communities."
+    "pastors": {
+      "title": "Ministry to Pastors and Leaders",
+      "content": "During the trip, we will have a special night of ministry and spiritual strengthening for local pastors and leaders in Mexico City. It will be a significant time of impartation, prayer, encouragement, and renewal for those who faithfully serve in the urban context."
+    },
+    "cultural": {
+      "title": "Cultural Experience",
+      "content": "The trip also includes a cultural and tourist experience in Mexico City. This time will allow the team to learn about the history, culture, and spiritual significance of the nation, while strengthening unity, connection, and shared memories as a team."
     },
     "whoCanApply": {
-      "title": "Who can apply",
-      "content": "People 16 years and older can apply (under 18 must be accompanied by a guardian) with willingness to serve in rural and remote areas. Good physical condition is required for mountain hiking. It's not necessary to speak indigenous languages; we will work with local translators."
+      "title": "Who Can Participate",
+      "intro": "This mission trip is open to people who meet the following requirements:",
+      "requirement1": "People 16 years and older can participate.",
+      "requirement2": "Participants between 16 and 18 years old must travel accompanied by one of their parents or a responsible legal guardian throughout the trip.",
+      "requirement3": "All participants must have a valid passport at the time of travel.",
+      "requirement4": "We are looking for people with an evangelistic heart, compassion for others, and a genuine desire to serve in diverse and sometimes challenging contexts.",
+      "requirement5": "We especially welcome health professionals, including doctors, nurses, and other medical providers who wish to use their skills to bring healing and hope to communities in need.",
+      "requirement6": "We also encourage non-medical participants with a servant's heart to apply. There are many opportunities to serve through prayer, evangelism, logistics, children's ministry, and community support.",
+      "requirement7": "All participants must demonstrate spiritual maturity, willingness to learn, and a humble, flexible, and loving attitude to work as a team."
     },
-    "cost": {
-      "title": "Trip cost",
-      "intro": "The trip cost covers transportation, lodging, food, and the service projects we will carry out in the communities.",
-      "amount": "To be confirmed",
-      "details": "The cost will include ground transportation from the meeting point, lodging in communities, food, materials for service projects, and support for local churches.",
-      "contribution": "Part of the cost also contributes to sustaining the ongoing work of missionaries and pastors who serve permanently in the Oaxaca mountains."
-    },
-    "ctaTitle": "Apply here",
-    "ctaButton": "APPLY NOW",
+    "ctaTitle": "Apply Now",
+    "ctaButton": "APPLY",
     "imageAlt": "Oaxaca Mountains, Mexico"
   },
   "donate": {
