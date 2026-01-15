@@ -14,6 +14,7 @@
   "navigation": {
     "vision": "Vision",
     "trips": "Trips",
+    "conference": "Conference",
     "donate": "Donate",
     "contact": "Contact"
   },
@@ -219,5 +220,15 @@
     "spanish": "Español",
     "english": "English",
     "us": "English"
+  },
+  "conference": {
+    "title": "Ola Holy Spirit",
+    "subtitle": "Conference 2026",
+    "description": "Ola Holy Spirit is a movement of unity and a collective cry that causes the wind of the Spirit to blow with force. It is a wave that rises to awaken the Church with its sound and power. It is born as the response of a generation that refuses to live a faith without the real manifestation of the Holy Spirit.",
+    "date": "Date",
+    "dateValue": "Saturday, November 7th",
+    "location": "Location",
+    "locationValue": "Villa Flamingos Hall",
+    "imageAlt": "Ola Holy Spirit Conference"
   }
 }

@@ -14,6 +14,7 @@
   "navigation": {
     "vision": "Visión",
     "trips": "Viajes",
+    "conference": "Conferencia",
     "donate": "Donar",
     "contact": "Contacto"
   },
@@ -219,5 +220,15 @@
     "spanish": "Español",
     "english": "English",
     "us": "English"
+  },
+  "conference": {
+    "title": "Ola Espíritu Santo",
+    "subtitle": "Conferencia 2026",
+    "description": "Ola Espíritu Santo es un movimiento de unidad y un clamor colectivo que provoca que el viento del Espíritu sople con fuerza. Es una ola que se levanta para despertar a la Iglesia con su sonido y su poder. Nace como la respuesta de una generación que se rehúsa a vivir una fe sin la manifestación real del Espíritu Santo.",
+    "date": "Fecha",
+    "dateValue": "Sábado 7 de noviembre",
+    "location": "Locación",
+    "locationValue": "Salón Villa Flamingos",
+    "imageAlt": "Conferencia Ola Espíritu Santo"
   }
 }

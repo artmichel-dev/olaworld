@@ -27,6 +27,7 @@ const Header = () => {
   const menuItems = [
     { href: getHomeUrl("#vision"), label: t("vision") },
     { href: getHomeUrl("#viajes"), label: t("trips") },
+    { href: "/conferencia", label: t("conference"), isPage: true },
     { href: getHomeUrl("#donar"), label: t("donate") },
     { href: getHomeUrl("#contacto"), label: t("contact") },
   ];
@@ -43,9 +44,15 @@ const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
             {menuItems.map((item) => (
-              <a key={item.href} href={item.href} className="nav-text text-foreground hover:text-primary transition-colors">
-                {item.label}
-              </a>
+              item.isPage ? (
+                <Link key={item.href} href={item.href} className="nav-text text-foreground hover:text-primary transition-colors">
+                  {item.label}
+                </Link>
+              ) : (
+                <a key={item.href} href={item.href} className="nav-text text-foreground hover:text-primary transition-colors">
+                  {item.label}
+                </a>
+              )
             ))}
             {/* Language Switcher - Desktop */}
             <LanguageSwitcher />
@@ -64,9 +71,15 @@ const Header = () => {
           <ul className="space-y-4">
             {menuItems.map((item) => (
               <li key={item.href}>
-                <a href={item.href} onClick={closeMenu} className="block nav-text text-foreground hover:text-primary transition-colors py-2">
-                  {item.label}
-                </a>
+                {item.isPage ? (
+                  <Link href={item.href} onClick={closeMenu} className="block nav-text text-foreground hover:text-primary transition-colors py-2">
+                    {item.label}
+                  </Link>
+                ) : (
+                  <a href={item.href} onClick={closeMenu} className="block nav-text text-foreground hover:text-primary transition-colors py-2">
+                    {item.label}
+                  </a>
+                )}
               </li>
             ))}
             {/* Language Switcher - Mobile */}
