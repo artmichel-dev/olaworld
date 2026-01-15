@@ -183,9 +183,36 @@ export default async function KenyaPage({
               </div>
             </div>
           </div>
+        </section>
 
-          {/* CTA */}
-          <div className="px-5 md:px-20 pb-20 text-center">
+        {/* Video Section */}
+        <section className="bg-background py-16 md:py-20">
+          <div className="px-5 md:px-20 max-w-5xl mx-auto">
+            <div className="mb-8 text-center">
+              <h2 className="heading-md text-primary font-serif italic mb-4">
+                {locale === 'es' ? 'Conoce Más Sobre Nuestro Ministerio en Kenya' : 'Learn More About Our Ministry in Kenya'}
+              </h2>
+              <p className="text-foreground/80 text-base md:text-lg">
+                {locale === 'es' 
+                  ? 'Mira este video para ver el impacto de nuestros viajes misioneros anteriores en Kenya'
+                  : 'Watch this video to see the impact of our previous mission trips in Kenya'}
+              </p>
+            </div>
+            <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+              <iframe
+                className="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
+                src="https://www.youtube.com/embed/rZRcY2Zv7Ak"
+                title="Kenya Mission Trip Video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+          </div>
+        </section>
+
+        {/* CTA Section */}
+        <section className="bg-card-cream">
+          <div className="px-5 md:px-20 py-20 text-center">
             <h3 className="heading-lg text-primary font-serif italic mb-8">{t.ctaTitle as string}</h3>
             <Link 
               href="https://thefellowshiptc.churchcenter.com/people/forms/1116260" 
