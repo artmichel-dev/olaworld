@@ -2,6 +2,7 @@ import { getMessages } from "next-intl/server";
 import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ConferenceVideo from "@/components/ConferenceVideo";
 
 export async function generateMetadata({
   params
@@ -50,6 +51,18 @@ export default async function ConferenciaPage({
             <h1 className="text-white text-6xl md:text-8xl lg:text-9xl font-serif italic mb-8 leading-tight">
               {t.title as string}
             </h1>
+          </div>
+        </section>
+
+        {/* Video Section */}
+        <section className="bg-background py-16 md:py-20">
+          <div className="px-5 md:px-20 max-w-6xl mx-auto">
+            <div className="rounded-2xl overflow-hidden shadow-2xl">
+              <ConferenceVideo 
+                videoUrl="https://cdn.zupernova.dev/olaworld/hls/conference_480p.m3u8"
+                className="w-full h-[300px] md:h-[500px] lg:h-[600px]"
+              />
+            </div>
           </div>
         </section>
 
