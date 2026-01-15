@@ -3,11 +3,12 @@
 import { Link } from "@/navigation";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import LanguageSwitcher from "./LanguageSwitcher";
 
 const Header = () => {
   const t = useTranslations("navigation");
+  const locale = useLocale();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -18,11 +19,16 @@ const Header = () => {
     setIsMenuOpen(false);
   };
 
+  // Construir URLs completas con el idioma correcto
+  const getHomeUrl = (hash: string) => {
+    return `/${locale === 'es' ? '' : locale}${hash}`;
+  };
+
   const menuItems = [
-    { href: "#vision", label: t("vision") },
-    { href: "#viajes", label: t("trips") },
-    { href: "#donar", label: t("donate") },
-    { href: "#contacto", label: t("contact") },
+    { href: getHomeUrl("#vision"), label: t("vision") },
+    { href: getHomeUrl("#viajes"), label: t("trips") },
+    { href: getHomeUrl("#donar"), label: t("donate") },
+    { href: getHomeUrl("#contacto"), label: t("contact") },
   ];
 
   return (
